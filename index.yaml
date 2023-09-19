@@ -1,0 +1,56 @@
+apiVersion: v1
+entries:
+  homer:
+  - apiVersion: v2
+    appVersion: v23.05.1
+    created: "2023-09-19T21:10:20.781326277Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A dead simple static HOMe for your servER to keep your services on
+      hand from a simple yaml config
+    digest: 99a73e47ba8b6623db6143b885e8258fe5770bde0393a445550258f4f9097ae7
+    name: homer
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/homer-1.0.0/homer-1.0.0.tgz
+    version: 1.0.0
+  jellyfin:
+  - apiVersion: v2
+    appVersion: 10.8.10
+    created: "2023-09-19T21:10:20.987993102Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: The Free Software Media System
+    digest: 26d02868766c5b2462cc6ab41e330df6d2e30003888b26f70509ea416fb2816a
+    name: jellyfin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
+    version: 1.0.0
+  mosquitto:
+  - apiVersion: v2
+    appVersion: 1.6.12
+    created: "2023-09-19T21:10:21.204778729Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Eclipse Mosquitto is an open source message broker which implements
+      MQTT version 5, 3.1.1 and 3.1
+    digest: 964a98881fff5dcf41f9954f9fa71f429307fda20c9658439ef07f234d629710
+    name: mosquitto
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-09-19T21:10:21.204790729Z"
