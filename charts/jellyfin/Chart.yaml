@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: "10.8.10"
+description: The Free Software Media System
+name: jellyfin
+version: 1.0.0
+dependencies:
+  - name: helmet
+    version: 0.6.5
+    repository: https://companyinfo.github.io/helm-charts
+    import-values:
+      - defaults
+  - name: common
+    version: "2.6.0"
+    repository: "https://charts.bitnami.com/bitnami"

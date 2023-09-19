@@ -1,0 +1,34 @@
+{{- if .Values.monitoring.podMonitor.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: {{ include "jellyfin.fullname" . }}
+  labels:
+    {{- include "jellyfin.labels" . | nindent 4 }}
+spec:
+  podMetricsEndpoints:
+    - interval: 15s
+      port: http
+      path: /metrics
+            {{- if .Values.monitoring.podMonitor.interval }}
+      interval: {{ .Values.monitoring.podMonitor.interval }}
+            {{- end }}
+            {{- if .Values.monitoring.podMonitor.bearerTokenFile }}
+      bearerTokenFile: {{ .Values.monitoring.podMonitor.bearerTokenFile }}
+            {{- end }}
+            {{- if .Values.monitoring.podMonitor.bearerTokenSecret }}
+      bearerTokenSecret:
+        name: {{ .Values.monitoring.podMonitor.bearerTokenSecret.name }}
+        key: {{ .Values.monitoring.podMonitor.bearerTokenSecret.key }}
+              {{- if .Values.monitoring.podMonitor.bearerTokenSecret.optional }}
+        optional: {{ .Values.monitoring.podMonitor.bearerTokenSecret.optional }}
+        {{- end }}
+        {{- end }}
+  jobLabel: {{ include "jellyfin.fullname" . }}-prometheus-exporter
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+  selector:
+    matchLabels:
+      {{- include "jellyfin.selectorLabels" . | nindent 6 }}
+{{- end }}
