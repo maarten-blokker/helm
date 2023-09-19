@@ -1,0 +1,22 @@
+image:
+  repository: b4bz/homer
+  tag: v23.05.1
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "200m"
+  limits:
+    memory: "64Mi"
+    cpu: "200m"
+
+ingress:
+  enabled: false
+
+configMap:
+  mounted: true
+  mountPath: /www/assets
+  data:
+    config.yml: |
+      externalConfig: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/assets/config.yml.d
