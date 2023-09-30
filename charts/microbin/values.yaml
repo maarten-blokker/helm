@@ -1,0 +1,46 @@
+image:
+  repository: danielszabo99/microbin
+  tag: 2.0.4
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: "32Mi"
+    cpu: "200m"
+  limits:
+    memory: "32Mi"
+    cpu: "200m"
+
+livenessProbe:
+  enabled: true
+  periodSeconds: 3
+  httpGet:
+    path: /
+    port: 8080
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: 8080
+
+envVars:
+  - name: 'MICROBIN_TITLE'
+    value: 'Homenet paste bin'
+  - name: 'MICROBIN_DISABLE_TELEMETRY'
+    value: 'true'
+  - name: 'MICROBIN_DISABLE_UPDATE_CHECKING'
+    value: 'true'
+  - name: 'MICROBIN_HIGHLIGHTSYNTAX'
+    value: 'true'
+  - name: 'MICROBIN_PRIVATE'
+    value: 'true'
+  - name: 'MICROBIN_HIDE_FOOTER'
+    value: 'true'
+  - name: 'MICROBIN_QR'
+    value: 'true'
+  - name: 'MICROBIN_THREADS'
+    value: '1'
