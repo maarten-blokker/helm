@@ -3,6 +3,22 @@ entries:
   deluge:
   - apiVersion: v2
     appVersion: 2.1.1
+    created: "2023-10-01T18:41:07.75439884Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Deluge is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 197d2a4c825610c2eee12ccbc7593ec1f6665594dd187f11d7f28757dd8390ba
+    name: deluge
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/deluge-0.0.2/deluge-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 2.1.1
     created: "2023-10-01T15:52:04.651272479Z"
     dependencies:
     - import-values:
@@ -56,6 +72,22 @@ entries:
   microbin:
   - apiVersion: v2
     appVersion: 2.0.4
+    created: "2023-10-01T18:41:07.950069342Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: MicroBin is a super tiny, feature rich, configurable, self-contained
+      and self-hosted paste bin web application.
+    digest: 03d51690399c7cd80ef01c5c5c4b757e06439078d1cb9569ea3570210bfc28eb
+    name: microbin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/microbin-1.0.1/microbin-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 2.0.4
     created: "2023-09-30T10:52:49.008435629Z"
     dependencies:
     - import-values:
@@ -87,4 +119,20 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-01T15:52:04.65128428Z"
+  wikijs:
+  - apiVersion: v2
+    appVersion: 2.5.300
+    created: "2023-10-01T18:41:08.170447534Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: The most powerful and extensible open source Wiki software.
+    digest: 1e1a897332169464e3b005b1b7fd045ed1c0044eb52b7ff74233f4f107333ba8
+    name: wikijs
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-10-01T18:41:08.170463734Z"
