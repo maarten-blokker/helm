@@ -1,6 +1,0 @@
-dependencies:
-- name: helmet
-  repository: https://companyinfo.github.io/helm-charts
-  version: 0.6.5
-digest: sha256:fe75602eb4bd73765f23cf054d53168f0fb957beedcf78c470b7e3bf5d09978d
-generated: "2023-09-19T19:04:23.431227+02:00"
