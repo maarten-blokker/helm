@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  deluge:
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2023-10-01T15:52:04.651272479Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Deluge is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 46f5a0db412910206393373a62a1a61076b4aaf29318c466ac57910ab98cab62
+    name: deluge
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/deluge-0.0.1/deluge-0.0.1.tgz
+    version: 0.0.1
   homer:
   - apiVersion: v2
     appVersion: v23.05.1
@@ -70,4 +87,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
-generated: "2023-09-30T10:52:49.008443129Z"
+generated: "2023-10-01T15:52:04.65128428Z"
