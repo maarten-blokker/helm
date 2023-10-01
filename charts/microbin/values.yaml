@@ -11,12 +11,15 @@ resources:
     memory: "32Mi"
     cpu: "200m"
 
+ingress:
+  enabled: false
+
 livenessProbe:
   enabled: true
   periodSeconds: 3
   httpGet:
     path: /
-    port: 8080
+    port: http
 
 readinessProbe:
   enabled: true
@@ -25,7 +28,7 @@ readinessProbe:
   failureThreshold: 12
   httpGet:
     path: /
-    port: 8080
+    port: http
 
 envVars:
   - name: 'MICROBIN_TITLE'

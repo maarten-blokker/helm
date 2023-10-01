@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "2.0.4"
 description: MicroBin is a super tiny, feature rich, configurable, self-contained and self-hosted paste bin web application.
 name: microbin
-version: 1.0.0
+version: 1.0.1
 dependencies:
   - name: helmet
     version: 0.6.5

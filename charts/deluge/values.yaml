@@ -13,3 +13,19 @@ resources:
 
 ingress:
   enabled: false
+
+livenessProbe:
+  enabled: true
+  periodSeconds: 3
+  httpGet:
+    path: /
+    port: http
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: http
