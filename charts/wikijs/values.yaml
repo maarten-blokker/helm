@@ -1,0 +1,41 @@
+image:
+  repository: linuxserver/wikijs
+  tag: 2.5.300
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 3000
+    protocol: TCP
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "100m"
+  limits:
+    memory: "128Mi"
+    cpu: "200m"
+
+ingress:
+  enabled: false
+
+livenessProbe:
+  enabled: true
+  httpGet:
+    path: /healthz
+    port: http
+
+readinessProbe:
+  enabled: true
+  httpGet:
+    path: /healthz
+    port: http
+
+startupProbe:
+  enabled: true
+  initialDelaySeconds: 10
+  periodSeconds: 3
+  failureThreshold: 10
+  httpGet:
+    path: /healthz
+    port: http
