@@ -1,0 +1,15 @@
+image:
+  repository: linuxserver/deluge
+  tag: 2.1.1
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "100m"
+  limits:
+    memory: "1Gi"
+    cpu: "500m"
+
+ingress:
+  enabled: false
