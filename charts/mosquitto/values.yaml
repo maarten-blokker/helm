@@ -5,7 +5,7 @@ image:
 
 ports:
   - name: mqtt
-    containerPort: "1883"
+    containerPort: 1883
     protocol: "TCP"
 
 resources:
