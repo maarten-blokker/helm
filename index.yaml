@@ -72,6 +72,22 @@ entries:
   microbin:
   - apiVersion: v2
     appVersion: 2.0.4
+    created: "2023-10-08T20:55:12.307475269Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: MicroBin is a super tiny, feature rich, configurable, self-contained
+      and self-hosted paste bin web application.
+    digest: 41463e911c05440083581e56790cdd2fb581cf65e51412d7de0272e8ee276e6e
+    name: microbin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/microbin-1.0.2/microbin-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 2.0.4
     created: "2023-10-01T18:41:07.950069342Z"
     dependencies:
     - import-values:
@@ -151,4 +167,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-07T22:58:12.269188705Z"
+generated: "2023-10-08T20:55:12.307496169Z"
