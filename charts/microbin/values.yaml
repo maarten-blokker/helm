@@ -3,6 +3,11 @@ image:
   tag: 2.0.4
   pullPolicy: IfNotPresent
 
+ports:
+  - name: http
+    containerPort: 8080
+    protocol: TCP
+
 resources:
   requests:
     memory: "32Mi"
@@ -47,3 +52,5 @@ envVars:
     value: 'true'
   - name: 'MICROBIN_THREADS'
     value: '1'
+  - name: 'MICROBIN_PORT'
+    value: '8080'
