@@ -1,0 +1,11 @@
+secretStores: {}
+#  gcp-store:
+#    provider:
+#      # For example: https://external-secrets.io/latest/provider/google-secrets-manager/
+#      gcpsm:
+#        auth:
+#          secretRef:
+#            secretAccessKeySecretRef:
+#              name: secret-google-service-account-key
+#              key: secret-access-credentials
+#        projectID: home-automation
