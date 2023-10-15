@@ -1,5 +1,6 @@
 secretStores: {}
 #  gcp-store:
+#    kind: ClusterSecretStore
 #    provider:
 #      # For example: https://external-secrets.io/latest/provider/google-secrets-manager/
 #      gcpsm:
