@@ -194,6 +194,20 @@ entries:
     version: 1.0.0
   secretstore:
   - apiVersion: v2
+    created: "2023-10-15T19:38:00.446219624Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create external secret stores using "external-secrets"
+      CRD
+    digest: 23acdc61bfe939ad74a314711455555da5a7419f9af71d596d1091cb53b09f37
+    name: secretstore
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.1/secretstore-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2023-10-15T18:00:23.101681758Z"
     dependencies:
     - name: common
@@ -223,4 +237,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-15T18:59:43.534604347Z"
+generated: "2023-10-15T19:38:00.446245324Z"
