@@ -1,0 +1,16 @@
+issuers: {}
+#  letsencrypt:
+#    kind: ClusterIssuer
+#    spec:
+#      acme:
+#        server: https://acme-v02.api.letsencrypt.org/directory
+#        email: maarten.blokker@outlook.com
+#        privateKeySecretRef:
+#          name: secret-letsencrypt-prod
+#        solvers:
+#          - dns01:
+#              cloudflare:
+#                email: admin@cloudflare.com
+#                apiTokenSecretRef:
+#                  name: cloudflare-api-token
+#                  key: api-token

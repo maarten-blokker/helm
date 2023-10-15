@@ -1,0 +1,9 @@
+apiVersion: v2
+name: externalsecret
+description: Utility to create cluster issuers using "cert-manager" CRD
+type: application
+version: 0.1.0
+dependencies:
+  - name: common
+    version: "2.6.0"
+    repository: "https://charts.bitnami.com/bitnami"
