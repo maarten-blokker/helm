@@ -33,6 +33,20 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/deluge-0.0.1/deluge-0.0.1.tgz
     version: 0.0.1
+  externalsecret:
+  - apiVersion: v2
+    created: "2023-10-15T18:00:22.846942985Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create external secrets using "external-secrets" CRD
+    digest: c9e9e78ce932f2e99bcb87183e9b9cab9a9d0535fbe05006c6ccefd92ec39be9
+    name: externalsecret
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/externalsecret-0.1.0/externalsecret-0.1.0.tgz
+    version: 0.1.0
   homer:
   - apiVersion: v2
     appVersion: v23.05.1
@@ -151,6 +165,21 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
+  secretstore:
+  - apiVersion: v2
+    created: "2023-10-15T18:00:23.101681758Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create external secret stores using "external-secrets"
+      CRD
+    digest: 96c263efbe680543727afe95eddfb43f79c2ac0b262e13dddd06c413ccd4439d
+    name: secretstore
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
+    version: 0.1.0
   wikijs:
   - apiVersion: v2
     appVersion: 2.5.300
@@ -167,4 +196,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-08T20:55:12.307496169Z"
+generated: "2023-10-15T18:00:23.101704759Z"
