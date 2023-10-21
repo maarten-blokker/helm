@@ -4,16 +4,6 @@ externalSecrets: {}
 #    target:
 #      name: cluster-secrets
 #    data:
-#      - key: 'test'
-#        remoteRef: 'gcp'
-#      - key: 'dsdasd'
-#        remoteRef: 'dsadd'
-#  aws-store:
-#    storeKind: SecretStore
-#    target:
-#      name: other-secrets
-#    data:
-#      - key: 'asd'
-#        remoteRef: 'aaa'
-#      - key: 'dsdasd'
-#        remoteRef: 'dsadd'
+#      - key: 'kubernetes-password'
+#        remoteRef:
+#          key: 'externally-hosted-password'
