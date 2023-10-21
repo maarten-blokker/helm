@@ -49,6 +49,19 @@ entries:
     version: 0.0.1
   externalsecret:
   - apiVersion: v2
+    created: "2023-10-21T20:44:44.567773368Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create external secrets using "external-secrets" CRD
+    digest: 80621c10576466c0e3774c085116c008dee474ffb62d01c828ce8d30e94c73a9
+    name: externalsecret
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/externalsecret-0.2.0/externalsecret-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     created: "2023-10-15T18:59:43.534580547Z"
     dependencies:
     - name: common
@@ -237,4 +250,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-15T19:38:00.446245324Z"
+generated: "2023-10-21T20:44:44.56806188Z"
