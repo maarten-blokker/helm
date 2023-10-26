@@ -123,6 +123,20 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
     version: 1.0.0
+  metallb-config:
+  - apiVersion: v2
+    created: "2023-10-26T18:37:14.835945657Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create metallb config using CRs
+    digest: 5ed2820d29ffc1998044a5cb4194d11dc28a28b6a76e39bf42bf2e4eb80c4eb7
+    name: metallb-config
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/metallb-config-0.1.0/metallb-config-0.1.0.tgz
+    version: 0.1.0
   microbin:
   - apiVersion: v2
     appVersion: 2.0.4
@@ -250,4 +264,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-21T20:44:44.56806188Z"
+generated: "2023-10-26T18:37:14.836162059Z"
