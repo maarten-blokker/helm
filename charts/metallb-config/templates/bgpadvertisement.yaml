@@ -1,0 +1,35 @@
+{{- if .Values.addresspools }}
+{{- range $pool := .Values.addresspools }}
+{{- if eq .protocol "bgp" }}
+---
+apiVersion: metallb.io/v1beta1
+kind: BGPAdvertisement
+metadata:
+  name: {{ printf "%s-%s" (include "common.names.name" $) $pool.name }}
+  namespace: {{ include "common.names.namespace" $ | quote }}
+  labels: {{- include "common.labels.standard" $ | nindent 4 }}
+    {{- if $.Values.labels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.labels "context" $ ) | nindent 4 }}
+    {{- end }}
+    {{- if $.Values.commonLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- if or $.Values.annotations $.Values.commonAnnotations }}
+  annotations:
+    {{- if $.Values.annotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.annotations "context" $) | nindent 4 }}
+      {{- end }}
+      {{- if $.Values.commonAnnotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.commonAnnotations "context" $ ) | nindent 4 }}
+      {{- end }}
+  {{- end }}
+spec:
+  ipAddressPools:
+    - {{ printf "%s-%s" (include "common.names.name" $) $pool.name }}
+  {{- if $pool.nodeSelectors }}
+  nodeSelectors:
+    {{- $pool.nodeSelectors | toYaml | nindent 2 }}
+  {{- end }}
+{{- end }}
+{{- end }}
+{{- end }}

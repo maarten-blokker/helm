@@ -1,0 +1,9 @@
+apiVersion: v2
+name: metallb-config
+description: Utility to create metallb config using CRs
+type: application
+version: 0.1.0
+dependencies:
+  - name: common
+    version: "2.6.0"
+    repository: "https://charts.bitnami.com/bitnami"
