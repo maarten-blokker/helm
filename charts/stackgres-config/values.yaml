@@ -21,4 +21,3 @@ cluster:
 #            serviceAccountJSON:
 #              key: serviceAccountJSON
 #              name: wikijs-gcp-serviceaccount
-#
