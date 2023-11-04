@@ -1,0 +1,29 @@
+{{- if (.Values.cluster.backup).enabled }}
+apiVersion: stackgres.io/v1
+kind: SGBackupConfig
+metadata:
+  name: {{ include "common.names.name" . | quote }}
+  namespace: {{ include "common.names.namespace" . | quote }}
+  labels: {{- include "common.labels.standard" . | nindent 4 }}
+    {{- if .Values.labels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.labels "context" $ ) | nindent 4 }}
+    {{- end }}
+    {{- if .Values.commonLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- if or .Values.annotations .Values.commonAnnotations }}
+  annotations:
+    {{- if .Values.annotations }}
+      {{- include "common.tplvalues.render" ( dict "value" .Values.annotations "context" $) | nindent 4 }}
+      {{- end }}
+      {{- if .Values.commonAnnotations }}
+      {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+      {{- end }}
+  {{- end }}
+spec:
+  baseBackups:
+    retention: {{ .Values.cluster.backup.retention | default 3 }}
+    cronSchedule: {{ .Values.cluster.backup.cronSchedule | default "0 3 * * *" | quote }}
+    compression: {{ .Values.cluster.backup.compression | default "lz4" | quote }}
+  storage: {{ .Values.cluster.backup.storage | required "Specify storage for backup" }}
+{{- end }}
