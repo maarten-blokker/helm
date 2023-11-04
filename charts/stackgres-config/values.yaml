@@ -12,10 +12,11 @@ cluster:
 #    retention: 5
 #    cronSchedule: 0 3 * * *
 #    compression: lz4
+#    path: /backup/wikijs
 #    storage:
+#      type: gcs
 #      gcs:
 #        bucket: home-net-postgres-backup
-#        path: /backup/wiki
 #        gcpCredentials:
 #          secretKeySelectors:
 #            serviceAccountJSON:
