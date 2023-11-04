@@ -250,6 +250,19 @@ entries:
     version: 0.1.0
   stackgres-config:
   - apiVersion: v2
+    created: "2023-11-04T22:27:35.815653485Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create stackgres config using CRs
+    digest: 2a7b402080a6639603b6be19d5aa0131a3f862496752ff676877c632afbfb6bf
+    name: stackgres-config
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/stackgres-config-0.3.0/stackgres-config-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2023-11-04T21:10:04.072905811Z"
     dependencies:
     - name: common
@@ -291,4 +304,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-04T21:10:04.072941828Z"
+generated: "2023-11-04T22:27:35.815687509Z"
