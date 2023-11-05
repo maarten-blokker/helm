@@ -26,7 +26,7 @@ spec:
   pods:
     persistentVolume:
       size: {{ (.Values.cluster.persistence).size | default "5Gi" | quote }}
-  sgInstanceProfile: {{ include "common.names.name" . | quote }}
+  sgInstanceProfile: {{ .Values.cluster.instanceProfile | quote }}
   configurations:
     sgPostgresConfig: {{ .Values.cluster.configuration.sgPostgresConfig }}
     sgPoolingConfig: {{ .Values.cluster.configuration.sgPoolingConfig }}

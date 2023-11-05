@@ -1,4 +1,5 @@
 cluster:
+  instanceProfile: default
   postgres:
     version: latest
   persistence:
