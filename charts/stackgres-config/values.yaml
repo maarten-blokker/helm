@@ -1,24 +1,35 @@
-cluster:
-  postgres:
-    version: latest
-#  resources:
-#    cpu: "1"
-#    memory: 1Gi
-#  persistence:
-#    size: 5Gi
-#    storageClass: default
-#  backup:
-#    enabled: true
-#    retention: 5
-#    cronSchedule: 0 3 * * *
-#    compression: lz4
-#    path: /backup/wikijs
-#    storage:
-#      type: gcs
-#      gcs:
-#        bucket: home-net-postgres-backup
-#        gcpCredentials:
-#          secretKeySelectors:
-#            serviceAccountJSON:
-#              key: serviceAccountJSON
-#              name: wikijs-gcp-serviceaccount
+#objectStorage:
+#  type: gcs
+#  gcs:
+#    bucket: home-net-postgres-backup
+#    gcpCredentials:
+#      secretKeySelectors:
+#        serviceAccountJSON:
+#          key: serviceAccountJSON
+#          name: wikijs-gcp-serviceaccount
+#configurations:
+#  pooling:
+#    - name: small
+#      data:
+#        pgbouncer:
+#          max_client_conn: '100'
+#  postgres:
+#    - name: tiny
+#      postgresVersion: 15
+#      data:
+#        autovacuum_work_mem: 64MB
+#        maintenance_work_mem: 128MB
+#    - name: small
+#      postgresVersion: 15
+#      data:
+#        autovacuum_work_mem: 128MB
+#        maintenance_work_mem: 256MB
+#instanceProfiles:
+#  - name: tiny
+#    resources:
+#      cpu: 300m
+#      memory: 250Mi
+#  - name: small
+#    resources:
+#      cpu: 500m
+#      memory: 500Mi

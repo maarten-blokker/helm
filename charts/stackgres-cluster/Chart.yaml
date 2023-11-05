@@ -1,8 +1,8 @@
 apiVersion: v2
-name: stackgres-config
-description: Utility to create stackgres config using CRs
+name: stackgres-cluster
+description: Utility to create a stackgres cluster using CRs
 type: application
-version: 1.0.0
+version: 0.1.0
 dependencies:
   - name: common
     version: "2.6.0"

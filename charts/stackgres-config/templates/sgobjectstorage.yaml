@@ -1,4 +1,4 @@
-{{- if (.Values.cluster.backup).enabled }}
+{{- if .Values.objectStorage }}
 apiVersion: stackgres.io/v1beta1
 kind: SGObjectStorage
 metadata:
@@ -11,14 +11,14 @@ metadata:
     {{- if .Values.commonLabels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
     {{- end }}
+  {{- if or .Values.annotations .Values.commonAnnotations }}
   annotations:
-    helm.sh/hook: pre-install
-    helm.sh/hook-weight: "10"
     {{- if .Values.annotations }}
       {{- include "common.tplvalues.render" ( dict "value" .Values.annotations "context" $) | nindent 4 }}
       {{- end }}
       {{- if .Values.commonAnnotations }}
       {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
       {{- end }}
-spec: {{ .Values.cluster.backup.storage | required "Specify storage for backup" | toYaml | nindent 2 }}
+  {{- end }}
+spec: {{ .Values.objectStorage | required "Specify storage backend" | toYaml | nindent 2 }}
 {{- end }}

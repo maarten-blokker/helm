@@ -1,9 +1,9 @@
-{{- range $instanceProfile := .Values.instanceProfiles }}
----
+{{- if (.Values.configurations).postgres }}
+{{- range $configuration := .Values.configurations.postgres }}
 apiVersion: stackgres.io/v1
-kind: SGInstanceProfile
+kind: SGPostgresConfig
 metadata:
-  name: {{ $instanceProfile.name }}
+  name: {{ $configuration.name }}
   namespace: {{ include "common.names.namespace" $ | quote }}
   labels: {{- include "common.labels.standard" $ | nindent 4 }}
     {{- if $.Values.labels }}
@@ -22,6 +22,7 @@ metadata:
       {{- end }}
   {{- end }}
 spec:
-  cpu: {{ $instanceProfile.resources.cpu | quote }}
-  memory: {{ $instanceProfile.resources.memory | quote }}
+  postgresVersion: {{$configuration.postgresVersion | quote }}
+  postgresql.conf: {{$configuration.data | toYaml | nindent 4 }}
+{{- end }}
 {{- end }}

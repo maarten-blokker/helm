@@ -27,12 +27,14 @@ spec:
     persistentVolume:
       size: {{ (.Values.cluster.persistence).size | default "5Gi" | quote }}
   sgInstanceProfile: {{ include "common.names.name" . | quote }}
-  {{- if (.Values.cluster.backup).enabled }}
   configurations:
+    sgPostgresConfig: {{ .Values.cluster.configuration.sgPostgresConfig }}
+    sgPoolingConfig: {{ .Values.cluster.configuration.sgPoolingConfig }}
+    {{ if .Values.cluster.configuration.backup }}
     backups:
       - sgObjectStorage: {{ include "common.names.name" . | quote }}
-        retention: {{ .Values.cluster.backup.retention | default 3 }}
-        cronSchedule: {{ .Values.cluster.backup.cronSchedule | default "0 3 * * *" | quote }}
-        compression: {{ .Values.cluster.backup.compression | default "lz4" | quote }}
-        path: {{ .Values.cluster.backup.path | required "Backup path required" | quote }}
-  {{- end }}
+        retention: {{ .Values.cluster.configuration.backup.retention | default 3 }}
+        cronSchedule: {{ .Values.cluster.configuration.backup.cronSchedule | default "0 3 * * *" | quote }}
+        compression: {{ .Values.cluster.configuration.backup.compression | default "lz4" | quote }}
+        path: {{ .Values.cluster.configuration.backup.path | required "Backup path required" | quote }}
+    {{- end }}

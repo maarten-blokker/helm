@@ -1,0 +1,15 @@
+cluster:
+  postgres:
+    version: latest
+  persistence:
+    size: 5Gi
+    storageClass: default
+  configuration:
+    sgPostgresConfig: small
+    sgPoolingConfig: small
+    backup:
+      sgObjectStorage: standard
+      retention: 5
+      cronSchedule: 0 3 * * *
+      compression: lz4
+      path: /backup/postgres
