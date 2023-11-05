@@ -250,6 +250,19 @@ entries:
     version: 0.1.0
   stackgres-cluster:
   - apiVersion: v2
+    created: "2023-11-05T21:13:47.153959447Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create a stackgres cluster using CRs
+    digest: 98d5090c6104768d17d864a2b196abd9f0ce60940f5ad9de4c42749ac666af20
+    name: stackgres-cluster
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/stackgres-cluster-0.3.0/stackgres-cluster-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2023-11-05T21:08:52.381556871Z"
     dependencies:
     - name: common
@@ -357,4 +370,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-05T21:08:52.381599672Z"
+generated: "2023-11-05T21:13:47.15399869Z"
