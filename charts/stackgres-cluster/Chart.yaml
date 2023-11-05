@@ -2,7 +2,7 @@ apiVersion: v2
 name: stackgres-cluster
 description: Utility to create a stackgres cluster using CRs
 type: application
-version: 0.3.0
+version: 1.0.0
 dependencies:
   - name: common
     version: "2.6.0"

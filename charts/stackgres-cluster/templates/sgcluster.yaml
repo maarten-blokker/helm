@@ -1,40 +1,43 @@
+{{- range $cluster := .Values.clusters }}
+---
 apiVersion: stackgres.io/v1
 kind: SGCluster
 metadata:
-  name: {{ include "common.names.name" . | quote }}
-  namespace: {{ include "common.names.namespace" . | quote }}
-  labels: {{- include "common.labels.standard" . | nindent 4 }}
-    {{- if .Values.labels }}
+  name: {{ $cluster.name }}
+  namespace: {{ include "common.names.namespace" $ | quote }}
+  labels: {{- include "common.labels.standard" $ | nindent 4 }}
+    {{- if $.Values.labels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.labels "context" $ ) | nindent 4 }}
     {{- end }}
-    {{- if .Values.commonLabels }}
+    {{- if $.Values.commonLabels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
     {{- end }}
-  {{- if or .Values.annotations .Values.commonAnnotations }}
+  {{- if or $.Values.annotations $.Values.commonAnnotations }}
   annotations:
-    {{- if .Values.annotations }}
-      {{- include "common.tplvalues.render" ( dict "value" .Values.annotations "context" $) | nindent 4 }}
+    {{- if $.Values.annotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.annotations "context" $) | nindent 4 }}
       {{- end }}
-      {{- if .Values.commonAnnotations }}
-      {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+      {{- if $.Values.commonAnnotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.commonAnnotations "context" $ ) | nindent 4 }}
       {{- end }}
   {{- end }}
 spec:
-  instances: {{.Values.cluster.instances | default 1 }}
+  instances: {{$cluster.instances | default 1 }}
   postgres:
-    version: {{.Values.cluster.postgres.version | default "latest" | quote }}
+    version: {{$cluster.postgres.version | default "latest" | quote }}
   pods:
     persistentVolume:
-      size: {{ (.Values.cluster.persistence).size | default "5Gi" | quote }}
-  sgInstanceProfile: {{ .Values.cluster.instanceProfile | quote }}
+      size: {{ ($cluster.persistence).size | default "5Gi" | quote }}
+  sgInstanceProfile: {{ $cluster.instanceProfile | quote }}
   configurations:
-    sgPostgresConfig: {{ .Values.cluster.configuration.sgPostgresConfig }}
-    sgPoolingConfig: {{ .Values.cluster.configuration.sgPoolingConfig }}
-    {{ if .Values.cluster.configuration.backup }}
+    sgPostgresConfig: {{ $cluster.configuration.sgPostgresConfig }}
+    sgPoolingConfig: {{ $cluster.configuration.sgPoolingConfig }}
+    {{ if $cluster.configuration.backup -}}
     backups:
-      - sgObjectStorage:  {{ .Values.cluster.configuration.backup.sgObjectStorage | quote }}
-        retention: {{ .Values.cluster.configuration.backup.retention | default 3 }}
-        cronSchedule: {{ .Values.cluster.configuration.backup.cronSchedule | default "0 3 * * *" | quote }}
-        compression: {{ .Values.cluster.configuration.backup.compression | default "lz4" | quote }}
-        path: {{ .Values.cluster.configuration.backup.path | required "Backup path required" | quote }}
+      - sgObjectStorage:  {{ $cluster.configuration.backup.sgObjectStorage | quote }}
+        retention: {{ $cluster.configuration.backup.retention | default 3 }}
+        cronSchedule: {{ $cluster.configuration.backup.cronSchedule | default "0 3 * * *" | quote }}
+        compression: {{ $cluster.configuration.backup.compression | default "lz4" | quote }}
+        path: {{ $cluster.configuration.backup.path | required "Backup path required" | quote }}
     {{- end }}
+{{- end }}
