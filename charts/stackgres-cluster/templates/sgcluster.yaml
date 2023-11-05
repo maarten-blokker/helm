@@ -32,7 +32,7 @@ spec:
     sgPoolingConfig: {{ .Values.cluster.configuration.sgPoolingConfig }}
     {{ if .Values.cluster.configuration.backup }}
     backups:
-      - sgObjectStorage: {{ include "common.names.name" . | quote }}
+      - sgObjectStorage:  {{ .Values.cluster.configuration.backup.sgObjectStorage | quote }}
         retention: {{ .Values.cluster.configuration.backup.retention | default 3 }}
         cronSchedule: {{ .Values.cluster.configuration.backup.cronSchedule | default "0 3 * * *" | quote }}
         compression: {{ .Values.cluster.configuration.backup.compression | default "lz4" | quote }}
