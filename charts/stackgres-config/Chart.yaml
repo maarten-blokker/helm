@@ -2,7 +2,7 @@ apiVersion: v2
 name: stackgres-config
 description: Utility to create stackgres config using CRs
 type: application
-version: 1.0.0
+version: 1.1.0
 dependencies:
   - name: common
     version: "2.6.0"

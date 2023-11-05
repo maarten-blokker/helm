@@ -1,24 +1,24 @@
-{{- if .Values.objectStorage }}
+{{- range $objectStorage := .Values.objectStorages }}
 apiVersion: stackgres.io/v1beta1
 kind: SGObjectStorage
 metadata:
-  name: {{ include "common.names.name" . | quote }}
-  namespace: {{ include "common.names.namespace" . | quote }}
-  labels: {{- include "common.labels.standard" . | nindent 4 }}
-    {{- if .Values.labels }}
+  name: {{ $objectStorage.name }}
+  namespace: {{ include "common.names.namespace" $ | quote }}
+  labels: {{- include "common.labels.standard" $ | nindent 4 }}
+    {{- if $.Values.labels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.labels "context" $ ) | nindent 4 }}
     {{- end }}
-    {{- if .Values.commonLabels }}
+    {{- if $.Values.commonLabels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
     {{- end }}
-  {{- if or .Values.annotations .Values.commonAnnotations }}
+  {{- if or $.Values.annotations $.Values.commonAnnotations }}
   annotations:
-    {{- if .Values.annotations }}
-      {{- include "common.tplvalues.render" ( dict "value" .Values.annotations "context" $) | nindent 4 }}
+    {{- if $.Values.annotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.annotations "context" $) | nindent 4 }}
       {{- end }}
-      {{- if .Values.commonAnnotations }}
-      {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+      {{- if $.Values.commonAnnotations }}
+      {{- include "common.tplvalues.render" ( dict "value" $.Values.commonAnnotations "context" $ ) | nindent 4 }}
       {{- end }}
   {{- end }}
-spec: {{ .Values.objectStorage | required "Specify storage backend" | toYaml | nindent 2 }}
+spec: {{ $objectStorage.spec | required "Specify storage backend" | toYaml | nindent 2 }}
 {{- end }}

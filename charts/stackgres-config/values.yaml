@@ -1,12 +1,14 @@
-#objectStorage:
-#  type: gcs
-#  gcs:
-#    bucket: home-net-postgres-backup
-#    gcpCredentials:
-#      secretKeySelectors:
-#        serviceAccountJSON:
-#          key: serviceAccountJSON
-#          name: wikijs-gcp-serviceaccount
+#objectStorages:
+#  - name: default
+#    spec:
+#      type: gcs
+#      gcs:
+#        bucket: home-net-postgres-backup
+#        gcpCredentials:
+#          secretKeySelectors:
+#            serviceAccountJSON:
+#              key: serviceAccountJSON
+#              name: wikijs-gcp-serviceaccount
 #configurations:
 #  pooling:
 #    - name: small
