@@ -248,7 +248,34 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
+  stackgres-cluster:
+  - apiVersion: v2
+    created: "2023-11-05T00:56:31.850482315Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create a stackgres cluster using CRs
+    digest: 577c2a3fec90223ab5ca7ac424bd4a874cc9bf3434f59ab2a12621a676986744
+    name: stackgres-cluster
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/stackgres-cluster-0.1.0/stackgres-cluster-0.1.0.tgz
+    version: 0.1.0
   stackgres-config:
+  - apiVersion: v2
+    created: "2023-11-05T00:56:31.961763152Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Utility to create stackgres config using CRs
+    digest: acb5b632f7535602aee9828834db4546a45512c4e58c47bc6e2cfd2d9bdf9062
+    name: stackgres-config
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/stackgres-config-1.0.0/stackgres-config-1.0.0.tgz
+    version: 1.0.0
   - apiVersion: v2
     created: "2023-11-04T22:27:35.815653485Z"
     dependencies:
@@ -304,4 +331,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-04T22:27:35.815687509Z"
+generated: "2023-11-05T00:56:31.96224996Z"
