@@ -11,6 +11,11 @@ resources:
     memory: "1Gi"
     cpu: "500m"
 
+ports:
+  - name: http
+    containerPort: 8112
+    protocol: TCP
+
 ingress:
   enabled: false
 
