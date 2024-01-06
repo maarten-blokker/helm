@@ -2,8 +2,5 @@ dependencies:
 - name: helmet
   repository: https://companyinfo.github.io/helm-charts
   version: 0.6.5
-- name: common
-  repository: https://charts.bitnami.com/bitnami
-  version: 2.6.0
-digest: sha256:63fa67d4206143f82c41f09fe095b9442cbc1a5b3fc1bccdad6a50a38a4cd9f4
-generated: "2023-09-19T22:26:17.54302+02:00"
+digest: sha256:fe75602eb4bd73765f23cf054d53168f0fb957beedcf78c470b7e3bf5d09978d
+generated: "2024-01-06T23:45:17.879693+01:00"
