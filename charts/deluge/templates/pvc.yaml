@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ .Values.persistence.data.name | quote }}
+  name: {{ include "common.names.name" . | quote }}
   namespace: {{ include "common.names.namespace" . | quote }}
   labels: {{- include "common.labels.standard" . | nindent 4 }}
     {{- if .Values.labels }}
@@ -21,12 +21,12 @@ metadata:
   {{- end }}
 spec:
   accessModes:
-    {{- range .Values.persistence.data.accessModes }}
+    {{- range .Values.persistence.config.accessModes }}
     - {{ . | quote }}
     {{- end }}
   resources:
     requests:
-      storage: {{ .Values.persistence.data.size | quote }}
-  {{- if .Values.persistence.data.storageClass }}
-  storageClassName: {{ .Values.persistence.data.storageClass }}
+      storage: {{ .Values.persistence.config.size | quote }}
+  {{- if .Values.persistence.config.storageClass }}
+  storageClassName: {{ .Values.persistence.config.storageClass }}
   {{- end -}}
