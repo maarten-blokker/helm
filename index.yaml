@@ -397,6 +397,22 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/stackgres-config-0.1.0/stackgres-config-0.1.0.tgz
     version: 0.1.0
+  transmission:
+  - apiVersion: v2
+    appVersion: 5.3.1
+    created: "2024-01-07T20:48:33.544062973Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Transmission, A Fast, Easy and Free Bittorrent Client
+    digest: 052a63af4477e068c189d74d17a69d4b9207adaadff99833fa13fe4c21cb0f11
+    name: transmission
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/transmission-1.0.0/transmission-1.0.0.tgz
+    version: 1.0.0
   wikijs:
   - apiVersion: v2
     appVersion: 2.5.300
@@ -428,4 +444,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-07T15:03:49.610974484Z"
+generated: "2024-01-07T20:48:33.544114229Z"
