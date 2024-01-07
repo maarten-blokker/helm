@@ -8,7 +8,14 @@ ports:
     containerPort: 9091
     protocol: TCP
 
-podSecurityContext:
+readinessProbe:
+  enabled: true
+  httpGet:
+    path: /
+    port: http
+
+containerSecurityContext:
+#  enabled: true
   capabilities:
     add:
       - NET_ADMIN
