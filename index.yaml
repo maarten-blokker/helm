@@ -400,6 +400,21 @@ entries:
   transmission:
   - apiVersion: v2
     appVersion: 5.3.1
+    created: "2024-01-07T21:24:55.470673852Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Transmission, A Fast, Easy and Free Bittorrent Client
+    digest: 79407358d74526c0a2c8174e50dd6630ea67b3f849c71b76bd746cacab137225
+    name: transmission
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/transmission-1.1.0/transmission-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 5.3.1
     created: "2024-01-07T20:48:33.544062973Z"
     dependencies:
     - import-values:
@@ -444,4 +459,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-07T20:48:33.544114229Z"
+generated: "2024-01-07T21:24:55.470732461Z"
