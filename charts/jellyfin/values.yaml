@@ -9,7 +9,12 @@ resources:
     cpu: "500m"
   limits:
     memory: "4Gi"
-    cpu: "5000m"
+    cpu: "4000m"
+
+ports:
+  - name: http
+    containerPort: 8096
+    protocol: TCP
 
 #envVars:
 #  - name: JELLYFIN_PublishedServerUrl
@@ -17,36 +22,3 @@ resources:
 
 ingress:
   enabled: false
-
-serviceMonitor:
-  enabled: true
-
-# EnableMetrics is a setting available in the XML (unfortunately not available through environment variables) that
-# enables prometheus compatible metrics.
-initContainers:
-  - name: enable-metrics
-    image: busybox:1.28
-    command: [ '/bin/sh', '-c' ]
-    args:
-      - |
-        sed -i 's/<EnableMetrics>false<\/EnableMetrics>/<EnableMetrics>true<\/EnableMetrics>/' config/system.xml
-
-persistence:
-  config:
-    name: &volume-name-config jellyfin-config
-    storageClass: ""
-    accessModes:
-      - ReadWriteOnce
-    size: 2Gi
-  data:
-    name: &volume-name-data jellyfin-data
-    storageClass: ""
-    accessModes:
-      - ReadWriteOnce
-    size: 64Gi
-
-extraVolumeMounts:
-  - mountPath: /config
-    name: *volume-name-config
-  - mountPath: /data
-    name: *volume-name-data
