@@ -87,6 +87,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/externalsecret-0.1.0/externalsecret-0.1.0.tgz
     version: 0.1.0
+  flaresolverr:
+  - apiVersion: v2
+    appVersion: v3.3.13
+    created: "2024-01-12T22:51:38.058104435Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: 20077dc177f9977bea762e0f9a8978f9779dad7b136ffa2fd9fc7be0b14e4b5c
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-1.0.0/flaresolverr-1.0.0.tgz
+    version: 1.0.0
   homer:
   - apiVersion: v2
     appVersion: v23.05.1
@@ -248,6 +265,23 @@ entries:
     name: mosquitto
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
+    version: 1.0.0
+  prowlarr:
+  - apiVersion: v2
+    appVersion: 1.11.4
+    created: "2024-01-12T22:51:38.251748472Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 34e1ff0e807bff9827f021d88cd214f936ceff3e5ca1840156c186ff44547f03
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   secretstore:
   - apiVersion: v2
@@ -459,4 +493,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-07T21:24:55.470732461Z"
+generated: "2024-01-12T22:51:38.251816819Z"
