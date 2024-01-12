@@ -1,0 +1,33 @@
+image:
+  repository: flaresolverr/flaresolverr
+  tag: v3.3.13
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 8191
+    protocol: TCP
+
+envVars:
+  - name: LOG_LEVEL
+    value: info
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 50Mi
+  limits:
+    cpu: 2000m
+    memory: 2000Mi
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: http
+
+ingress:
+  enabled: false
