@@ -1,0 +1,18 @@
+image:
+  repository: linuxserver/prowlarr
+  tag: 1.11.4
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 9696
+    protocol: TCP
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: http
