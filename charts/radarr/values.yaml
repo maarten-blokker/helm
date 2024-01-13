@@ -1,0 +1,24 @@
+image:
+  repository: linuxserver/radarr
+  tag: 5.2.6
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 7878
+    protocol: TCP
+
+livenessProbe:
+  enabled: true
+  exec:
+    command:
+      - /usr/bin/env
+      - bash
+      - -c
+      - curl --fail localhost:8989/api/v3/system/status?apiKey=`IFS=\> && while
+        read -d \< E C; do if [[ $E = "ApiKey" ]]; then echo $C; fi; done < /config/config.xml`
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 5
+  successThreshold: 1
