@@ -15,7 +15,7 @@ livenessProbe:
       - /usr/bin/env
       - bash
       - -c
-      - curl --fail localhost:8989/api/v3/system/status?apiKey=`IFS=\> && while
+      - curl --fail localhost:7878/api/v3/system/status?apiKey=`IFS=\> && while
         read -d \< E C; do if [[ $E = "ApiKey" ]]; then echo $C; fi; done < /config/config.xml`
   initialDelaySeconds: 10
   periodSeconds: 10
