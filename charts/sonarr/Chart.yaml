@@ -3,7 +3,7 @@ appVersion: "4.0.0"
 name: sonarr
 description: Sonarr is a PVR for usenet and bittorrent users.
 type: application
-version: 1.0.0
+version: 1.0.1
 dependencies:
   - name: helmet
     version: 0.6.5

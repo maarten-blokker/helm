@@ -17,8 +17,16 @@ livenessProbe:
       - -c
       - curl --fail localhost:7878/api/v3/system/status?apiKey=`IFS=\> && while
         read -d \< E C; do if [[ $E = "ApiKey" ]]; then echo $C; fi; done < /config/config.xml`
-  initialDelaySeconds: 10
+  initialDelaySeconds: 20
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 5
   successThreshold: 1
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 5
+  periodSeconds: 1
+  failureThreshold: 15
+  httpGet:
+    path: /ping
+    port: http
