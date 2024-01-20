@@ -124,6 +124,21 @@ entries:
   jellyfin:
   - apiVersion: v2
     appVersion: 10.8.13
+    created: "2024-01-20T15:46:22.991725447Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: The Free Software Media System
+    digest: 5ac0640f4d8eb33465d612c146d22736e0352f2e6904387b73323f6bc4dec772
+    name: jellyfin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.5.0/jellyfin-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
+    appVersion: 10.8.13
     created: "2024-01-20T15:33:24.264258288Z"
     dependencies:
     - import-values:
@@ -618,4 +633,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-20T15:33:24.264317909Z"
+generated: "2024-01-20T15:46:22.991794532Z"
