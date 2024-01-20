@@ -1,0 +1,37 @@
+{{- range $pvc := .Values.pvcs }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ printf "%s-%s" (include "common.names.name" $) $pvc.name }}
+  namespace: {{ include "common.names.namespace" $ | quote }}
+  labels: {{- include "common.labels.standard" $ | nindent 4 }}
+    {{- if $.Values.labels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.labels "context" $ ) | nindent 4 }}
+    {{- end }}
+    {{- if $.Values.commonLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- if or $pvc.annotations $.Values.commonAnnotations }}
+  annotations:
+    {{- if $.Values.commonAnnotations }}
+    {{- include "common.tplvalues.render" ( dict "value" $.Values.commonAnnotations "context" $ ) | nindent 4 }}
+    {{- end }}
+    {{- if $pvc.annotations }}
+    {{- include "common.tplvalues.render" (dict "value" $pvc.annotations "context" $) | nindent 4 }}
+    {{- end }}
+  {{- end }}
+spec:
+  {{- $defaultAccessModes := list "ReadWriteOnce" -}}
+  {{- $accessModes := $pvc.accessModes | default $defaultAccessModes}}
+  accessModes:
+    {{range $accessMode := $accessModes -}}
+     - {{ $accessMode }}
+    {{- end }}
+  {{- if $pvc.storageClassName }}
+  storageClassName:
+  {{- end }}
+  resources:
+    requests:
+      storage: {{ $pvc.request.storage | quote }}
+{{- end }}

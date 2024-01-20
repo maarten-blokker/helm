@@ -25,3 +25,11 @@ livenessProbe:
 
 ingress:
   enabled: false
+
+pvcs: []
+#  - name: config
+#    annotations: {}
+#    accessModes:
+#      - ReadWriteOnce
+#    request:
+#      storage: 128Mi
