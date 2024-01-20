@@ -3,7 +3,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ printf "%s-%s" (include "common.names.name" $) $pvc.name }}
+  name: {{ include "common.names.fullname" $ | quote }}
   namespace: {{ include "common.names.namespace" $ | quote }}
   labels: {{- include "common.labels.standard" $ | nindent 4 }}
     {{- if $.Values.labels }}
