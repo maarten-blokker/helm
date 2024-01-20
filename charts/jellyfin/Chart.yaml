@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "10.8.13"
 description: The Free Software Media System
 name: jellyfin
-version: 1.5.0
+version: 1.6.0
 dependencies:
   - name: helmet
     version: 0.6.5
