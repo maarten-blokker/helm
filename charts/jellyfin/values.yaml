@@ -8,6 +8,10 @@ ports:
     containerPort: 8096
     protocol: TCP
 
+# Need to completely shut down all instances due to database lock
+updateStrategy:
+  type: Recreate
+
 readinessProbe:
   enabled: true
   initialDelaySeconds: 30
@@ -19,7 +23,7 @@ readinessProbe:
 
 livenessProbe:
   enabled: true
-  initialDelaySeconds: 10
+  initialDelaySeconds: 120
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 3
