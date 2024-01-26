@@ -1,0 +1,9 @@
+apiVersion: v2
+name: externalservice
+description: Set up forward proxies to external back-ends using a service without selector and a manual endpoint slice.
+type: application
+version: 1.0.0
+dependencies:
+  - name: common
+    version: "2.6.0"
+    repository: "https://charts.bitnami.com/bitnami"

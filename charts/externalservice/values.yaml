@@ -1,0 +1,19 @@
+ingress:
+  enabled: false
+  ingressClassName: nginx
+  hostname: example.com
+  tls: true
+  pathType: ImplementationSpecific
+  annotations: {}
+
+service:
+  ports:
+    - name: http
+      appProtocol: http
+      protocol: TCP
+      port: 80
+      targetPort: http
+
+endpoint:
+  addresses:
+    - 127.0.0.1

@@ -1,0 +1,25 @@
+apiVersion: discovery.k8s.io/v1
+kind: EndpointSlice
+metadata:
+  name: {{ include "common.names.fullname" . }}
+  namespace: {{ include "common.names.namespace" . | quote }}
+  labels:
+    kubernetes.io/service-name: {{ include "common.names.fullname" . }}
+    {{- include "common.labels.standard" . | nindent 4 }}
+    {{- if .Values.commonLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- if or .Values.commonAnnotations .Values.ingress.annotations }}
+  annotations:
+    {{- if .Values.commonAnnotations }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+    {{- end }}
+    {{- if .Values.ingress.annotations }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.ingress.annotations "context" $) | nindent 4 }}
+    {{- end }}
+  {{- end }}
+addressType: IPv4
+ports: {{- include "common.tplvalues.render" (dict "value" .Values.service.ports "context" $) | nindent 4 }}
+endpoints:
+  - addresses: {{- include "common.tplvalues.render" (dict "value" .Values.endpoint.addresses "context" $) | nindent 4 }}
+
