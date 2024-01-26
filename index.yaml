@@ -87,6 +87,21 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/externalsecret-0.1.0/externalsecret-0.1.0.tgz
     version: 0.1.0
+  externalservice:
+  - apiVersion: v2
+    created: "2024-01-26T15:13:26.656109276Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Set up forward proxies to external back-ends using a service without
+      selector and a manual endpoint slice.
+    digest: 19a0edbb58a7e0225b54f2a4e5c5149bdd7395ac7b4f7424a2dfc2b67d91eef0
+    name: externalservice
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/externalservice-1.0.0/externalservice-1.0.0.tgz
+    version: 1.0.0
   flaresolverr:
   - apiVersion: v2
     appVersion: v3.3.13
@@ -678,4 +693,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-20T23:44:55.016120278Z"
+generated: "2024-01-26T15:13:26.656184777Z"
