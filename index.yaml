@@ -89,6 +89,20 @@ entries:
     version: 0.1.0
   externalservice:
   - apiVersion: v2
+    created: "2024-01-27T11:36:27.735306288Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.0
+    description: Set up forward proxies to external back-ends using a service without
+      selector and a manual endpoint slice.
+    digest: 722ac6ef6d5540323d461a2787c52da2f240c2156ba1455582991080d839386f
+    name: externalservice
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/externalservice-2.0.0/externalservice-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
     created: "2024-01-26T15:13:26.656109276Z"
     dependencies:
     - name: common
@@ -693,4 +707,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-26T15:13:26.656184777Z"
+generated: "2024-01-27T11:36:27.735401668Z"
