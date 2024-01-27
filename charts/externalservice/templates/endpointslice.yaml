@@ -19,7 +19,7 @@ metadata:
     {{- end }}
   {{- end }}
 addressType: IPv4
-ports: {{- include "common.tplvalues.render" (dict "value" .Values.service.ports "context" $) | nindent 4 }}
+ports: {{- include "common.tplvalues.render" (dict "value" .Values.endpoint.ports "context" $) | nindent 4 }}
 endpoints:
   - addresses: {{- include "common.tplvalues.render" (dict "value" .Values.endpoint.addresses "context" $) | nindent 4 }}
 

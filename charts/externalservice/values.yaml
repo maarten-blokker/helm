@@ -9,11 +9,15 @@ ingress:
 service:
   ports:
     - name: http
-      appProtocol: http
       protocol: TCP
       port: 80
-      targetPort: http
+      targetPort: 8080
 
 endpoint:
   addresses:
     - 127.0.0.1
+  ports:
+    - name: http
+      appProtocol: http
+      protocol: TCP
+      port: 8080
