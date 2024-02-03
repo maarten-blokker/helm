@@ -385,6 +385,22 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
+  photoprism:
+  - apiVersion: v2
+    appVersion: "231128"
+    created: "2024-02-03T23:01:00.073601461Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: PhotoPrism is an AI-Powered Photos App for the Decentralized Web.
+    digest: f0f94048dd780cc5d54d74140bbee2f58b2de6d6f344d80fdce27af8f040824c
+    name: photoprism
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/photoprism-1.0.0/photoprism-1.0.0.tgz
+    version: 1.0.0
   prowlarr:
   - apiVersion: v2
     appVersion: 1.11.4
@@ -707,4 +723,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-27T11:36:27.735401668Z"
+generated: "2024-02-03T23:01:00.073685897Z"
