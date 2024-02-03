@@ -1,0 +1,48 @@
+image:
+  repository: photoprism/photoprism
+  tag: 231128
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 2342
+    protocol: TCP
+
+ingress:
+  enabled: false
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 10
+  periodSeconds: 1
+  failureThreshold: 20
+  httpGet:
+    path: /api/v1/status
+    port: http
+
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 30
+  periodSeconds: 5
+  failureThreshold: 3
+  httpGet:
+    path: /api/v1/status
+    port: http
+
+envVars:
+  - name: PHOTOPRISM_ADMIN_PASSWORD
+    value: "admin"
+  - name: PHOTOPRISM_HTTP_HOST
+    value: "0.0.0.0"
+  - name: PHOTOPRISM_HTTP_PORT
+    value: "2342"
+  - name: PHOTOPRISM_DISABLE_RESTART
+    value: "true"
+  - name: PHOTOPRISM_FFMPEG_ENCODER
+    value: "vaapi"
+  - name: PHOTOPRISM_SITE_TITLE
+    value: "Home-net private photos"
+  - name: PHOTOPRISM_SITE_CAPTION
+    value: "A self hosted collection of private photos"
+  - name: PHOTOPRISM_LOG_LEVEL
+    value: "info"

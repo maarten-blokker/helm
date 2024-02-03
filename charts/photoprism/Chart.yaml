@@ -1,0 +1,11 @@
+apiVersion: v2
+appVersion: "231128"
+description: PhotoPrism is an AI-Powered Photos App for the Decentralized Web.
+name: photoprism
+version: 1.0.0
+dependencies:
+  - name: helmet
+    version: 0.6.5
+    repository: https://companyinfo.github.io/helm-charts
+    import-values:
+      - defaults
