@@ -388,6 +388,21 @@ entries:
   photoprism:
   - apiVersion: v2
     appVersion: "231128"
+    created: "2024-02-04T00:05:33.549118054Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: PhotoPrism is an AI-Powered Photos App for the Decentralized Web.
+    digest: e2dedc2a72c16bb34727148bc8a30e60c32e940edad54707255c64178f08c961
+    name: photoprism
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/photoprism-1.1.0/photoprism-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: "231128"
     created: "2024-02-03T23:01:00.073601461Z"
     dependencies:
     - import-values:
@@ -723,4 +738,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-03T23:01:00.073685897Z"
+generated: "2024-02-04T00:05:33.549204215Z"
