@@ -1,6 +1,6 @@
 image:
   repository: photoprism/photoprism
-  tag: 231128
+  tag: "231128"
   pullPolicy: IfNotPresent
 
 ports:
@@ -30,19 +30,11 @@ livenessProbe:
     port: http
 
 envVars:
-  - name: PHOTOPRISM_ADMIN_PASSWORD
-    value: "admin"
-  - name: PHOTOPRISM_HTTP_HOST
-    value: "0.0.0.0"
-  - name: PHOTOPRISM_HTTP_PORT
-    value: "2342"
-  - name: PHOTOPRISM_DISABLE_RESTART
-    value: "true"
-  - name: PHOTOPRISM_FFMPEG_ENCODER
-    value: "vaapi"
-  - name: PHOTOPRISM_SITE_TITLE
-    value: "Home-net private photos"
-  - name: PHOTOPRISM_SITE_CAPTION
-    value: "A self hosted collection of private photos"
-  - name: PHOTOPRISM_LOG_LEVEL
-    value: "info"
+  PHOTOPRISM_ADMIN_PASSWORD: "admin"
+  PHOTOPRISM_HTTP_HOST: "0.0.0.0"
+  PHOTOPRISM_HTTP_PORT: "2342"
+  PHOTOPRISM_DISABLE_RESTART: "true"
+  PHOTOPRISM_FFMPEG_ENCODER: "vaapi"
+  PHOTOPRISM_SITE_TITLE: "Home-net private photos"
+  PHOTOPRISM_SITE_CAPTION: "A self hosted collection of private photos"
+  PHOTOPRISM_LOG_LEVEL: "info"
