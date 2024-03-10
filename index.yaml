@@ -118,6 +118,22 @@ entries:
     version: 1.0.0
   flaresolverr:
   - apiVersion: v2
+    appVersion: v3.3.16
+    created: "2024-03-10T14:50:32.891495636Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: 8c93a8255f7f15d9e19647a0b0eb0c8afdea9828c0a6fcb022e81ace2e8fe257
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-1.0.1/flaresolverr-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     appVersion: v3.3.13
     created: "2024-01-12T22:51:38.058104435Z"
     dependencies:
@@ -448,6 +464,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.13.3
+    created: "2024-03-10T14:50:32.99355041Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 9efc1f76e4005133faf28975a1701fda827150d78420b97d6ff3f5715878b066
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.2/prowlarr-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 1.11.4
     created: "2024-01-17T21:08:12.471189727Z"
     dependencies:
@@ -480,6 +512,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 5.3.6
+    created: "2024-03-10T14:50:33.11181338Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 28a37696cfdb949a22c89640ae7e028319b7886acc005cea15a76cc2c435242b
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-1.1.2/radarr-1.1.2.tgz
+    version: 1.1.2
   - apiVersion: v2
     appVersion: 5.2.6
     created: "2024-01-17T21:08:12.591220818Z"
@@ -555,6 +603,23 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: "2024-03-10T14:50:33.233582426Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: 5d155be223c84673adc02fe0b6d7bd3ea669ff780cb59f0e4923ce10b179000c
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-1.0.2/sonarr-1.0.2.tgz
+    version: 1.0.2
   - apiVersion: v2
     appVersion: 4.0.0
     created: "2024-01-17T21:08:12.736244538Z"
@@ -768,4 +833,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-05T19:58:15.912831874Z"
+generated: "2024-03-10T14:50:33.233681561Z"
