@@ -1,0 +1,38 @@
+image:
+  repository: vikunja/vikunja
+  tag: 0.23.0
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 3456
+    protocol: TCP
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "200m"
+  limits:
+    memory: "128Mi"
+    cpu: "200m"
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 5
+  periodSeconds: 1
+  failureThreshold: 15
+  httpGet:
+    path: /health
+    port: http
+
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 10
+  periodSeconds: 5
+  failureThreshold: 3
+  httpGet:
+    path: /health
+    port: http
+
+ingress:
+  enabled: false
