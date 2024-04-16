@@ -802,6 +802,22 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/transmission-1.0.0/transmission-1.0.0.tgz
     version: 1.0.0
+  vikunja:
+  - apiVersion: v2
+    appVersion: 0.23.0
+    created: "2024-04-16T19:53:38.110844182Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: The Todo-app to organize your life.
+    digest: 624122f532ad10fe4c134087261b7523a8500ee2cce4dc46ce1360a33c9048a5
+    name: vikunja
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/vikunja-1.0.0/vikunja-1.0.0.tgz
+    version: 1.0.0
   wikijs:
   - apiVersion: v2
     appVersion: 2.5.300
@@ -833,4 +849,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-03-10T14:50:33.233681561Z"
+generated: "2024-04-16T19:53:38.110925324Z"
