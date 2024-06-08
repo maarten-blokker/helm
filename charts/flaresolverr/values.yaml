@@ -1,6 +1,6 @@
 image:
   repository: flaresolverr/flaresolverr
-  tag: v3.3.16
+  tag: v3.3.19
   pullPolicy: IfNotPresent
 
 ports:
