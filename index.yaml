@@ -118,6 +118,22 @@ entries:
     version: 1.0.0
   flaresolverr:
   - apiVersion: v2
+    appVersion: v3.3.19
+    created: "2024-06-08T09:26:30.461696654Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: b13fa9f2f5dd4fdea48917858bd095265ec06cae5c81e6a4dcbdacfcd4348f42
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-1.0.2/flaresolverr-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: v3.3.16
     created: "2024-03-10T14:50:32.891495636Z"
     dependencies:
@@ -167,6 +183,21 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/homer-1.0.0/homer-1.0.0.tgz
     version: 1.0.0
   jellyfin:
+  - apiVersion: v2
+    appVersion: 10.9.6
+    created: "2024-06-08T09:26:30.550827619Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: The Free Software Media System
+    digest: 3d4301476316a8a0b573fae9859b7f630d7b0deb1ce180409509f32a24c4b392
+    name: jellyfin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.7.0/jellyfin-1.7.0.tgz
+    version: 1.7.0
   - apiVersion: v2
     appVersion: 10.8.13
     created: "2024-01-20T23:44:55.016027595Z"
@@ -464,6 +495,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2024-06-08T09:26:30.642216971Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: fb916ae924d5377c2cd79fdb4df18ff44a63580638293af2b8770ba43af30461
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.1.0/prowlarr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 1.13.3
     created: "2024-03-10T14:50:32.99355041Z"
     dependencies:
@@ -512,6 +559,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 5.6.0
+    created: "2024-06-08T09:26:30.781485259Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 0a2edd2ca7b92f90ae7cb0d78d451d96ccaca9fed3b0784300f1d79fe1e09b7e
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-1.2.0/radarr-1.2.0.tgz
+    version: 1.2.0
   - apiVersion: v2
     appVersion: 5.3.6
     created: "2024-03-10T14:50:33.11181338Z"
@@ -603,6 +666,23 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.5
+    created: "2024-06-08T09:26:30.872532415Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: 7182e1881ee653eae08916fdeb05eddc1fefa36bbc3f940f0633cc14c482532e
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-1.0.3/sonarr-1.0.3.tgz
+    version: 1.0.3
   - apiVersion: v2
     appVersion: 4.0.2
     created: "2024-03-10T14:50:33.233582426Z"
@@ -849,4 +929,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-04-16T19:53:38.110925324Z"
+generated: "2024-06-08T09:26:30.872662616Z"
