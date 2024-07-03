@@ -182,6 +182,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/homer-1.0.0/homer-1.0.0.tgz
     version: 1.0.0
+  it-tools:
+  - apiVersion: v2
+    appVersion: 2024.5.13-a0bc346
+    created: "2024-07-03T16:51:14.634989286Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Collection of handy online tools for developers, with great UX as
+      a web app.
+    digest: 762602227536fb9518cf0c753d16b2dca51d3b95c5d307a847d544042d6130af
+    name: it-tools
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/it-tools-1.0.0/it-tools-1.0.0.tgz
+    version: 1.0.0
   jellyfin:
   - apiVersion: v2
     appVersion: 10.9.6
@@ -929,4 +946,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-06-08T09:26:30.872662616Z"
+generated: "2024-07-03T16:51:14.635094956Z"
