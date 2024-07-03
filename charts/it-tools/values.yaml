@@ -1,0 +1,36 @@
+image:
+  repository: corentinth/it-tools
+  tag: 2024.5.13-a0bc346
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 8080
+    protocol: TCP
+
+resources:
+  requests:
+    memory: "32Mi"
+    cpu: "100m"
+  limits:
+    memory: "32Mi"
+    cpu: "100m"
+
+ingress:
+  enabled: false
+
+livenessProbe:
+  enabled: true
+  periodSeconds: 3
+  httpGet:
+    path: /
+    port: http
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: http
