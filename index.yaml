@@ -185,6 +185,22 @@ entries:
   it-tools:
   - apiVersion: v2
     appVersion: 2024.5.13-a0bc346
+    created: "2024-07-03T16:59:44.590787369Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Collection of handy online tools for developers, with great UX as
+      a web app.
+    digest: 6335c5d408ddc561ae1a3994bc13d6cc02120ab8d79682ce53178da26cfe8fd7
+    name: it-tools
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/it-tools-1.0.1/it-tools-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 2024.5.13-a0bc346
     created: "2024-07-03T16:51:14.634989286Z"
     dependencies:
     - import-values:
@@ -946,4 +962,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-07-03T16:51:14.635094956Z"
+generated: "2024-07-03T16:59:44.590883958Z"
