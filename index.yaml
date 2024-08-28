@@ -465,6 +465,25 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
+  paperless-ngx:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2024-08-28T21:03:32.990437492Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: Paperless-ngx is a community-supported open-source document management
+      system that transforms your physical documents into a searchable online archive
+      so you can keep, well, less paper.
+    digest: 9621ceaa76ae88bb9eeaf415b3ad04f11ca5f4944e38ad4022331351e3e1d50b
+    name: paperless-ngx
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/paperless-ngx-0.1.0/paperless-ngx-0.1.0.tgz
+    version: 0.1.0
   photoprism:
   - apiVersion: v2
     appVersion: "231128"
@@ -962,4 +981,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-07-03T16:59:44.590883958Z"
+generated: "2024-08-28T21:03:32.990540023Z"
