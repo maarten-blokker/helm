@@ -1,6 +1,6 @@
 image:
-  repository: linuxserver/paperless-ngx
-  tag: "1.8.0"
+  repository: paperlessngx/paperless-ngx
+  tag: "2.11"
   pullPolicy: IfNotPresent
 
 ports:
