@@ -1,0 +1,28 @@
+image:
+  repository: linuxserver/sabnzbd
+  tag: 4.3.3
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    containerPort: 8080
+    protocol: TCP
+
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 20
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 5
+  successThreshold: 1
+  httpGet:
+    path: /api?mode=version
+    port: http
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 5
+  periodSeconds: 1
+  failureThreshold: 15
+  httpGet:
+    path: /api?mode=version
+    port: http
