@@ -738,6 +738,22 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/radarr-1.0.0/radarr-1.0.0.tgz
     version: 1.0.0
+  sabnzbd:
+  - apiVersion: v2
+    appVersion: 4.3.3
+    created: "2024-11-27T20:51:31.824950021Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: The free and easy binary newsreader
+    digest: 60f4121e8a30c5a8b311413c2ba3cf73d6bad378e2994dc9589da01ef7342060
+    name: sabnzbd
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-1.0.0/sabnzbd-1.0.0.tgz
+    version: 1.0.0
   secretstore:
   - apiVersion: v2
     created: "2023-10-15T19:38:00.446219624Z"
@@ -1083,4 +1099,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-11-27T20:35:18.853446076Z"
+generated: "2024-11-27T20:51:31.8250621Z"
