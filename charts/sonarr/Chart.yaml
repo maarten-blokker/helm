@@ -1,10 +1,10 @@
 apiVersion: v2
-appVersion: "4.0.5"
+appVersion: "4.0.11"
 home: https://github.com/Sonarr/Sonarr
 name: sonarr
 description: Sonarr is a PVR for usenet and bittorrent users.
 type: application
-version: 1.0.3
+version: 1.0.4
 dependencies:
   - name: helmet
     version: 0.6.5

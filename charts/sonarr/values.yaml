@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/sonarr
-  tag: 4.0.5
+  tag: 4.0.11
   pullPolicy: IfNotPresent
 
 ports:
