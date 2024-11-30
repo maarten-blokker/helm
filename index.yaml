@@ -465,6 +465,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/mosquitto-1.0.0/mosquitto-1.0.0.tgz
     version: 1.0.0
+  overseerr:
+  - apiVersion: v2
+    appVersion: 1.33.2
+    created: "2024-11-30T10:56:05.786528836Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Overseerr is a request management and media discovery tool built
+      to work with your existing Plex ecosystem.
+    digest: c2f6f2709d86c67a6e9eaab441df9ba237fd1c804462e4607c355192fa06dd03
+    name: overseerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/overseerr-1.0.0/overseerr-1.0.0.tgz
+    version: 1.0.0
   paperless-ngx:
   - apiVersion: v2
     appVersion: "2.11"
@@ -1099,4 +1116,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-11-27T20:51:31.8250621Z"
+generated: "2024-11-30T10:56:05.786633953Z"
