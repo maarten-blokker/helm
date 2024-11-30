@@ -583,6 +583,22 @@ entries:
   prowlarr:
   - apiVersion: v2
     appVersion: 1.27.0
+    created: "2024-11-30T20:51:54.882227144Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 9c1c17a31b916a5bd90d87d7a31dd188d66b199bd64a27dada1f2c59cefac518
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.1.2/prowlarr-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: 1.27.0
     created: "2024-11-27T20:35:18.492434061Z"
     dependencies:
     - import-values:
@@ -662,6 +678,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 5.15.1
+    created: "2024-11-30T20:51:54.994160406Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 1b2ce677e83bbdfc9b1b35af260c483d51291185f086a9a55c3a183359099867
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-1.2.2/radarr-1.2.2.tgz
+    version: 1.2.2
   - apiVersion: v2
     appVersion: 5.15.1
     created: "2024-11-27T20:35:18.662496769Z"
@@ -801,6 +833,23 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.11
+    created: "2024-11-30T20:51:55.102308966Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: eaad64fa23ceab0e6be9014d2adc0bd3dce7a23c35f8ec22143027743f653281
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-1.0.5/sonarr-1.0.5.tgz
+    version: 1.0.5
   - apiVersion: v2
     appVersion: 4.0.11
     created: "2024-11-27T20:35:18.853311725Z"
@@ -1116,4 +1165,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-11-30T10:56:05.786633953Z"
+generated: "2024-11-30T20:51:55.102445826Z"
