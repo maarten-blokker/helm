@@ -1087,6 +1087,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/tandoor-recipes-0.1.0/tandoor-recipes-0.1.0.tgz
     version: 0.1.0
+  tautulli:
+  - apiVersion: v2
+    appVersion: 2.15.0
+    created: "2024-11-30T23:40:31.754786076Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Tautulli is a 3rd party application that you can run alongside your
+      Plex Media Server to monitor activity and track various statistics.
+    digest: e538f95e4f9e0fac8cb07b14925305e336bcbdf4ae268c2abae72afd56750681
+    name: tautulli
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tautulli-1.0.0/tautulli-1.0.0.tgz
+    version: 1.0.0
   transmission:
   - apiVersion: v2
     appVersion: 5.3.1
@@ -1165,4 +1182,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-11-30T20:51:55.102445826Z"
+generated: "2024-11-30T23:40:31.754894989Z"
