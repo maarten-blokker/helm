@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: "5.3.1"
+appVersion: "4.0.6"
 description: Transmission, A Fast, Easy and Free Bittorrent Client
 name: transmission
-version: 1.1.0
+version: 2.0.0
 dependencies:
   - name: helmet
     version: 0.6.5

@@ -1,6 +1,6 @@
 image:
-  repository: haugene/transmission-openvpn
-  tag: 5.3.1
+  repository: linuxserver/transmission
+  tag: 4.0.6
   pullPolicy: IfNotPresent
 
 ports:
@@ -13,9 +13,3 @@ readinessProbe:
   httpGet:
     path: /
     port: http
-
-containerSecurityContext:
-#  enabled: true
-  capabilities:
-    add:
-      - NET_ADMIN
