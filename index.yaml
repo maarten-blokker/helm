@@ -135,6 +135,22 @@ entries:
     version: 1.0.0
   flaresolverr:
   - apiVersion: v2
+    appVersion: v3.3.21
+    created: "2024-12-25T11:12:02.020374016Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: 79f0a38b2907a0ea563db383eb8d085cfb6b191acdd46de89181c776dc5373e9
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-1.0.3/flaresolverr-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
     appVersion: v3.3.19
     created: "2024-06-08T09:26:30.461696654Z"
     dependencies:
@@ -1214,4 +1230,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2024-12-14T21:29:25.313741334Z"
+generated: "2024-12-25T11:12:02.0204829Z"
