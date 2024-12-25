@@ -7,7 +7,7 @@ type: application
 version: 1.0.5
 dependencies:
   - name: helmet
-    version: 0.6.5
+    version: 0.11.0
     repository: https://companyinfo.github.io/helm-charts
     import-values:
       - defaults
