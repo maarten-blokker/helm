@@ -1,0 +1,7 @@
+{
+  "commitMessageTopic": "chore({{depName}}): Update helm values",
+  "fileMatch": [
+    "(^|/)values\\.ya?ml$"
+  ],
+  "pinDigests": false
+}
