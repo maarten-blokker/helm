@@ -1,7 +1,20 @@
 {
-  "commitMessageTopic": "chore({{depName}}): Update helm values",
-  "fileMatch": [
-    "(^|/)values\\.ya?ml$"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
   ],
-  "pinDigests": false
+  "helmValues": {
+    "commitMessageTopic": "chore({{depName}}): Update helm values",
+    "fileMatch": [
+      "(^|/)values\\.ya?ml$"
+    ],
+    "pinDigests": false
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["helm-values"],
+      "groupName": "Helm chart values",
+      "automerge": false
+    }
+  ]
 }
