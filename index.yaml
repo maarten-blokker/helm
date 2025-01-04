@@ -3,6 +3,22 @@ entries:
   bazarr:
   - apiVersion: v2
     appVersion: 1.4.5
+    created: "2025-01-04T23:54:42.789776104Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Bazarr is a companion application to Sonarr and Radarr that manages
+      and downloads subtitles based on your requirements.
+    digest: 3de211a84dcdb6efe8b9dd94293a64635ecfecc14c427467b5b53fbacc08dc2c
+    name: bazarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/bazarr-1.1.0/bazarr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 1.4.5
     created: "2024-12-07T20:43:33.643838044Z"
     dependencies:
     - import-values:
@@ -1325,4 +1341,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-04T23:54:19.175330385Z"
+generated: "2025-01-04T23:54:42.789878515Z"
