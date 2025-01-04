@@ -1,6 +1,6 @@
 image:
   repository: vabene1111/recipes
-  tag: "1.5.19"
+  tag: "1.5.26"
   pullPolicy: IfNotPresent
 
 ports:
