@@ -6,7 +6,7 @@ name: radarr
 version: 1.3.0
 dependencies:
   - name: helmet
-    version: 0.6.5
+    version: 0.11.0
     repository: https://companyinfo.github.io/helm-charts
     import-values:
       - defaults
