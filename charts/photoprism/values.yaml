@@ -1,6 +1,6 @@
 image:
   repository: photoprism/photoprism
-  tag: "231128"
+  tag: "20220121"
   pullPolicy: IfNotPresent
 
 ports:
