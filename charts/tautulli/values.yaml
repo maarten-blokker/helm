@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/tautulli
-  tag: 2.15.0
+  tag: 2021.12.16
   pullPolicy: IfNotPresent
 
 ports:
