@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "1.33.2"
 description: Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 name: overseerr
-version: 1.0.0
+version: 2.0.0
 dependencies:
   - name: helmet
     version: 0.6.5
