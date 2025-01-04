@@ -14,5 +14,6 @@
         "fileFilters": ["**/Chart.yaml"]
       }
     }
-  ]
+  ],
+  "allowedPostUpgradeCommands": ["^.*"]
 }
