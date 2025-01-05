@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "0.23.0"
 description: The Todo-app to organize your life.
 name: vikunja
-version: 1.0.0
+version: 1.1.0
 dependencies:
   - name: helmet
     version: 0.11.0

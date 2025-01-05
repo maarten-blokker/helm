@@ -1,6 +1,6 @@
 image:
   repository: vikunja/vikunja
-  tag: 0.23.0
+  tag: 0.24.6
   pullPolicy: IfNotPresent
 
 ports:
