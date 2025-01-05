@@ -515,6 +515,22 @@ entries:
   mosquitto:
   - apiVersion: v2
     appVersion: 1.6.15
+    created: "2025-01-05T00:11:49.784573312Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Eclipse Mosquitto is an open source message broker which implements
+      MQTT version 5, 3.1.1 and 3.1
+    digest: 36c5225099b7a09c9835ffd7b369482ea13daee69d2cba6ce42e8648daab5bef
+    name: mosquitto
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/mosquitto-2.0.0/mosquitto-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: 1.6.15
     created: "2024-12-25T11:24:21.167539658Z"
     dependencies:
     - import-values:
@@ -1390,4 +1406,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-05T00:04:57.392124902Z"
+generated: "2025-01-05T00:11:49.784731176Z"
