@@ -581,6 +581,24 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: "2.11"
+    created: "2025-01-05T00:04:57.213005251Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: Paperless-ngx is a community-supported open-source document management
+      system that transforms your physical documents into a searchable online archive
+      so you can keep, well, less paper.
+    digest: bcaa8684f496b5d702d57947ce65aeb3b8fbf7e227f0020f77e985ebd55651ea
+    name: paperless-ngx
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/paperless-ngx-0.3.0/paperless-ngx-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: "2.11"
     created: "2024-08-30T16:55:50.24863775Z"
     dependencies:
     - import-values:
@@ -1313,6 +1331,21 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.23.0
+    created: "2025-01-05T00:04:57.39198978Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: The Todo-app to organize your life.
+    digest: 72dce4a1a74e67e42c4f27d8a6d91bcddda978c00a24e813690b13485a857206
+    name: vikunja
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/vikunja-1.1.0/vikunja-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 0.23.0
     created: "2024-04-16T19:53:38.110844182Z"
     dependencies:
     - import-values:
@@ -1357,4 +1390,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-05T00:04:24.55118036Z"
+generated: "2025-01-05T00:04:57.392124902Z"
