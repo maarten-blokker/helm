@@ -1012,6 +1012,23 @@ entries:
   sonarr:
   - apiVersion: v2
     appVersion: 4.0.11
+    created: "2025-01-06T19:08:02.883228072Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: 956b5051878a6acbca8aeb23ec282f65de08678d159b44f4952f14301728c444
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-1.0.6/sonarr-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 4.0.11
     created: "2024-11-30T20:51:55.102308966Z"
     dependencies:
     - import-values:
@@ -1406,4 +1423,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-05T00:11:49.784731176Z"
+generated: "2025-01-06T19:08:02.883394382Z"
