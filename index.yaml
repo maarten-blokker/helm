@@ -217,6 +217,22 @@ entries:
   homer:
   - apiVersion: v2
     appVersion: v23.05.1
+    created: "2025-01-06T19:09:28.631980707Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A dead simple static HOMe for your servER to keep your services on
+      hand from a simple yaml config
+    digest: b27bd6847c92c7e684a120b648bed0a9ce0629f0503efb70edc7a159db0996c7
+    name: homer
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/homer-2.0.0/homer-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: v23.05.1
     created: "2025-01-04T23:52:20.991384914Z"
     dependencies:
     - import-values:
@@ -1472,4 +1488,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-06T19:09:00.113143672Z"
+generated: "2025-01-06T19:09:28.632123636Z"
