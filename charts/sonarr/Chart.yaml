@@ -4,7 +4,7 @@ home: https://github.com/Sonarr/Sonarr
 name: sonarr
 description: Sonarr is a PVR for usenet and bittorrent users.
 type: application
-version: 1.0.5
+version: 1.0.6
 dependencies:
   - name: helmet
     version: 0.6.5
