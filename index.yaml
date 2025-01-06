@@ -713,6 +713,22 @@ entries:
   prowlarr:
   - apiVersion: v2
     appVersion: 1.27.0
+    created: "2025-01-06T19:08:31.701369288Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: b84916e2179173eae007b7d07d9a13356ca33eaadd9cf792b92389b865ac08ae
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.3.0/prowlarr-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    appVersion: 1.27.0
     created: "2025-01-05T00:04:24.551022613Z"
     dependencies:
     - import-values:
@@ -824,6 +840,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 5.15.1
+    created: "2025-01-06T19:08:31.819064262Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: bbc36449e28951606f414ec021b4e6dd193bbd94ebd1cef9f3775a0523b1ae8e
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-1.4.0/radarr-1.4.0.tgz
+    version: 1.4.0
   - apiVersion: v2
     appVersion: 5.15.1
     created: "2025-01-04T23:45:47.408484726Z"
@@ -1423,4 +1455,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-06T19:08:02.883394382Z"
+generated: "2025-01-06T19:08:31.819261771Z"
