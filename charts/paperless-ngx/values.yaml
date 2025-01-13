@@ -1,6 +1,6 @@
 image:
   repository: paperlessngx/paperless-ngx
-  tag: "2.13"
+  tag: "2.14"
   pullPolicy: IfNotPresent
 
 ports:
