@@ -907,6 +907,22 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 5.15.1
+    created: "2025-02-08T16:24:08.902464338Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 039bde20f732f2ddb3e2cbe8dd98be1c41770fbdb13e671b515988265f07cfb3
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-1.5.0/radarr-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
+    appVersion: 5.15.1
     created: "2025-01-06T19:08:31.819064262Z"
     dependencies:
     - import-values:
@@ -1570,4 +1586,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-27T21:17:43.159530659Z"
+generated: "2025-02-08T16:24:08.902631159Z"
