@@ -1362,6 +1362,23 @@ entries:
   tandoor-recipes:
   - apiVersion: v2
     appVersion: 1.5.19
+    created: "2025-02-08T16:24:55.331753097Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: The recipe manager that allows you to manage your ever growing collection
+      of digital recipes.
+    digest: 5d4e572a31f7db2fa6227a950ee576d2684611393ae7a7cfa3c4b0155a3f707c
+    name: tandoor-recipes
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tandoor-recipes-0.2.4/tandoor-recipes-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 1.5.19
     created: "2025-01-27T21:16:40.743760445Z"
     dependencies:
     - import-values:
@@ -1586,4 +1603,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-08T16:24:08.902631159Z"
+generated: "2025-02-08T16:24:55.415361933Z"
