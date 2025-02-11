@@ -5,7 +5,7 @@ name: photoprism
 version: 1.2.0
 dependencies:
   - name: helmet
-    version: 0.11.0
+    version: 0.14.0
     repository: https://companyinfo.github.io/helm-charts
     import-values:
       - defaults

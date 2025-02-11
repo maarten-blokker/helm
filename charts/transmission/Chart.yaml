@@ -5,7 +5,7 @@ name: transmission
 version: 2.0.0
 dependencies:
   - name: helmet
-    version: 0.6.5
+    version: 0.14.0
     repository: https://companyinfo.github.io/helm-charts
     import-values:
       - defaults
