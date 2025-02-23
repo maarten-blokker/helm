@@ -1,0 +1,27 @@
+job:
+  schedule: "*/5 * * * *"
+  failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 3
+  concurrencyPolicy: Allow
+  restartPolicy: Never
+  image:
+    registry: "docker.io"
+    repository: ubuntu
+    pullPolicy: IfNotPresent
+    tag: latest
+  command: [ "/bin/bash" ]
+  args:
+    - "-c"
+    - "echo hello world"
+  resources: {}
+  env: []
+  envFrom: []
+  nodeSelector: []
+  tolerations: [ ]
+  affinity: { }
+  labels: { }
+  annotations: { }
+  podAnnotations: { }
+  volumes: []
+  volumeMounts: []
+  files: []

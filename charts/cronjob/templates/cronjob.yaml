@@ -1,0 +1,81 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "cronjob.fullname" . }}
+  labels:
+    {{- include "cronjob.labels" . | nindent 4 }}
+    {{- with .Values.job.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+  annotations:
+    {{- with .Values.job.annotations }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+spec:
+  successfulJobsHistoryLimit: {{ default 3 .Values.job.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ default 5 .Values.job.failedJobsHistoryLimit }}
+  schedule: "{{ .Values.job.schedule }}"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          {{- with .Values.job.podAnnotations }}
+          annotations: {{- toYaml . | nindent 12 }}
+          {{- end }}
+          labels: {{- include "cronjob.selectorLabels" . | nindent 12 }}
+        spec:
+          restartPolicy: {{ .Values.job.restartPolicy }}
+          {{- with .Values.job.nodeSelector }}
+          nodeSelector: {{ toYaml . | nindent 12 }}
+          {{- end }}
+          {{- with .Values.job.affinity }}
+          affinity: {{ toYaml . | nindent 12 }}
+          {{- end }}
+          {{- with .Values.job.tolerations }}
+          tolerations: {{ toYaml . | nindent 12 }}
+          {{- end }}
+          {{- if or .Values.job.files .Values.job.volumes }}
+          volumes:
+            {{- if or .Values.job.files }}
+            - name: files
+              configMap:
+                name: {{ include "cronjob.fullname" . }}-files
+            {{- end }}
+            {{- with .Values.job.volumes }}
+            {{- toYaml . | nindent 12 }}
+            {{- end }}
+          {{- end }}
+          containers:
+            - name: {{ .Chart.Name }}
+              {{- with .Values.job.image }}
+              image: "{{ .registry }}/{{ .repository }}:{{ .tag }}"
+              imagePullPolicy: {{ .pullPolicy }}
+              {{- end }}
+              {{- with .Values.job.command }}
+              command: {{ toYaml . | nindent 16 }}
+              {{- end }}
+              {{- with .Values.job.args }}
+              args: {{ toYaml . | nindent 16 }}
+              {{- end }}
+              {{- with .Values.job.resources }}
+              resources: {{ toYaml . | nindent 16 }}
+              {{- end }}
+              {{- with .Values.job.env }}
+              env: {{- toYaml . | nindent 16 }}
+              {{- end }}
+              {{- with .Values.job.envFrom }}
+              envFrom: {{- toYaml . | nindent 16 }}
+              {{- end }}
+              {{- if or .Values.job.files .Values.job.volumes }}
+              volumeMounts:
+                  {{- with .Values.job.volumeMounts }}
+                    {{- toYaml . | nindent 16 }}
+                  {{- end }}
+                  {{- if .Values.job.files }}
+                    {{- range .Values.job.files }}
+                - name: files
+                  mountPath: {{ .mountPath }}/{{ .name }}
+                  subPath: {{ .name }}
+                  {{- end }}
+                {{- end }}
+              {{- end }}
