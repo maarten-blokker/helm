@@ -792,6 +792,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.31.2
+    created: "2025-02-23T09:46:56.501276939Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 8a1ce76c42ffdb7909a4f1c69ad634d70b4831a9ddf4cf6066122adb234d31d3
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.5.0/prowlarr-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
     appVersion: 1.27.0
     created: "2025-01-27T21:14:54.502104487Z"
     dependencies:
@@ -1651,4 +1667,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-18T21:17:17.398971939Z"
+generated: "2025-02-23T09:46:56.501425505Z"
