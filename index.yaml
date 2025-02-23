@@ -47,6 +47,17 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/clusterissuer-0.1.1/clusterissuer-0.1.1.tgz
     version: 0.1.1
+  cronjob:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-23T21:41:00.90432393Z"
+    description: Utility to create cronjobs
+    digest: 3435f0f86fd918b8da5514fc13944d4f1eca44ef5165fca9e56dc736e96e501d
+    name: cronjob
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/cronjob-0.1.0/cronjob-0.1.0.tgz
+    version: 0.1.0
   deluge:
   - apiVersion: v2
     appVersion: 2.1.1
@@ -1667,4 +1678,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-23T09:46:56.501425505Z"
+generated: "2025-02-23T21:41:00.904529142Z"
