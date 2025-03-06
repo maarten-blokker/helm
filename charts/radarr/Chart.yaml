@@ -1,9 +1,9 @@
 apiVersion: v2
-appVersion: "5.15.1"
+appVersion: 5.19.3
 home: https://github.com/Radarr/Radarr
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr
-version: 1.5.0
+version: 1.6.0
 dependencies:
   - name: helmet
     version: 0.6.5
