@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/radarr
-  tag: 5.19.3
+  tag: 5.20.2
   pullPolicy: IfNotPresent
 
 ports:
