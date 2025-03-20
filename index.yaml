@@ -1651,6 +1651,21 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.23.0
+    created: "2025-03-20T20:35:11.672080672Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.14.0
+    description: The Todo-app to organize your life.
+    digest: a8a62baaf62ba10fbd4e76f93210e294fa964f5b4a080de2b983a33177b4dab4
+    name: vikunja
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/vikunja-1.2.0/vikunja-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 0.23.0
     created: "2025-01-05T00:04:57.39198978Z"
     dependencies:
     - import-values:
@@ -1710,4 +1725,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-06T13:51:15.179099016Z"
+generated: "2025-03-20T20:35:11.672268571Z"
