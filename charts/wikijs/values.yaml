@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/wikijs
-  tag: 2.5.306
+  tag: 2.5.307
   pullPolicy: IfNotPresent
 
 ports:
