@@ -227,6 +227,22 @@ entries:
     version: 1.0.0
   homer:
   - apiVersion: v2
+    appVersion: v25.03.3
+    created: "2025-03-26T15:19:07.595970117Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: A dead simple static HOMe for your servER to keep your services on
+      hand from a simple yaml config
+    digest: cc1d4d23e2a884c56b6977b6f43e2ebb86320edf2613778c3e58f9cfe603e9ec
+    name: homer
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/homer-3.1.1/homer-3.1.1.tgz
+    version: 3.1.1
+  - apiVersion: v2
     appVersion: v25.03.2
     created: "2025-03-06T13:51:15.178965437Z"
     dependencies:
@@ -602,6 +618,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/microbin-1.0.0/microbin-1.0.0.tgz
     version: 1.0.0
   mosquitto:
+  - apiVersion: v2
+    appVersion: 2.0.21
+    created: "2025-03-26T15:19:07.715344079Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Eclipse Mosquitto is an open source message broker which implements
+      MQTT version 5, 3.1.1 and 3.1
+    digest: 62ca19d7854e6a665739c1c05dfd7568b7f174cfea39e0c2492b2810a7b9f6f4
+    name: mosquitto
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/mosquitto-2.0.1/mosquitto-2.0.1.tgz
+    version: 2.0.1
   - apiVersion: v2
     appVersion: 1.6.15
     created: "2025-01-05T00:11:49.784573312Z"
@@ -1549,6 +1581,23 @@ entries:
     version: 0.1.0
   tandoor-recipes:
   - apiVersion: v2
+    appVersion: 1.5.33
+    created: "2025-03-26T15:19:07.854822207Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: The recipe manager that allows you to manage your ever growing collection
+      of digital recipes.
+    digest: 7753b02bb181e4f556f9c1c3ccf5e49eea3d1e74a58002b946ca9629f3d3b712
+    name: tandoor-recipes
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tandoor-recipes-0.2.5/tandoor-recipes-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
     appVersion: 1.5.19
     created: "2025-02-08T16:24:55.331753097Z"
     dependencies:
@@ -1806,4 +1855,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-26T15:18:33.481847586Z"
+generated: "2025-03-26T15:19:07.855006799Z"
