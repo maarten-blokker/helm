@@ -1250,6 +1250,21 @@ entries:
     version: 1.0.0
   sabnzbd:
   - apiVersion: v2
+    appVersion: 4.5.0
+    created: "2025-04-12T09:46:34.599606329Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: The free and easy binary newsreader
+    digest: 375d16b9d2163aae3b5567794ba305f26f809a15d100e5ec0b6a76305398b839
+    name: sabnzbd
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-1.2.0/sabnzbd-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
     appVersion: 4.3.3
     created: "2025-01-04T23:43:32.805456801Z"
     dependencies:
@@ -1855,4 +1870,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-26T15:19:07.855006799Z"
+generated: "2025-04-12T09:46:34.599835669Z"
