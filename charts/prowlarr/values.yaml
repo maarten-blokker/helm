@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/prowlarr
-  tag: 1.32.2
+  tag: 1.35.1
   pullPolicy: IfNotPresent
 
 ports:
