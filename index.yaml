@@ -867,6 +867,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.35.1
+    created: "2025-05-05T16:24:16.155416141Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 21e3d6c9ead84c586fe0fa83016cbebbbb9115f0ff1d8bb917d8cedcd443e636
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.7.0/prowlarr-1.7.0.tgz
+    version: 1.7.0
+  - apiVersion: v2
     appVersion: 1.32.2
     created: "2025-03-20T20:39:03.147862112Z"
     dependencies:
@@ -1749,6 +1765,22 @@ entries:
     version: 0.1.0
   tautulli:
   - apiVersion: v2
+    appVersion: 2.15.2
+    created: "2025-05-05T16:24:16.275893557Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.6.5
+    description: Tautulli is a 3rd party application that you can run alongside your
+      Plex Media Server to monitor activity and track various statistics.
+    digest: 7a36d2dead9d3431697abf70b4c797ff8d4cd825393343f50aea030bdd718d4a
+    name: tautulli
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tautulli-1.0.2/tautulli-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 2.15.0
     created: "2025-01-27T21:17:17.993720447Z"
     dependencies:
@@ -1903,4 +1935,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-05T16:23:47.987884057Z"
+generated: "2025-05-05T16:24:16.276078932Z"
