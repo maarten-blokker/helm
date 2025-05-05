@@ -733,6 +733,24 @@ entries:
     version: 1.0.0
   paperless-ngx:
   - apiVersion: v2
+    appVersion: "2.15"
+    created: "2025-05-05T16:25:06.19910698Z"
+    dependencies:
+    - import-values:
+      - defaults
+      name: helmet
+      repository: https://companyinfo.github.io/helm-charts
+      version: 0.11.0
+    description: Paperless-ngx is a community-supported open-source document management
+      system that transforms your physical documents into a searchable online archive
+      so you can keep, well, less paper.
+    digest: 01a83c9f97664f5a50df48cfdb335d0c4b5e1e85efa0594d7b0e0d9ac7ad2114
+    name: paperless-ngx
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/paperless-ngx-0.5.0/paperless-ngx-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: "2.11"
     created: "2025-01-27T21:17:43.159151761Z"
     dependencies:
@@ -1950,4 +1968,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-05T16:24:40.166922632Z"
+generated: "2025-05-05T16:25:06.199333372Z"
