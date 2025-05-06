@@ -5,6 +5,7 @@ image:
 
 ports:
   - name: http
+    servicePort: 80
     containerPort: 80
     protocol: TCP
 
