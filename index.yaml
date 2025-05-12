@@ -3,6 +3,22 @@ entries:
   bazarr:
   - apiVersion: v2
     appVersion: 1.4.5
+    created: "2025-05-12T20:17:09.586746421Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Bazarr is a companion application to Sonarr and Radarr that manages
+      and downloads subtitles based on your requirements.
+    digest: e8c47b657441efcfe8a089995fce567049a09508aaca9ed7fb892f4d31d7c178
+    name: bazarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/bazarr-2.0.0/bazarr-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: 1.4.5
     created: "2025-01-04T23:54:42.789776104Z"
     dependencies:
     - import-values:
@@ -161,6 +177,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/externalservice-1.0.0/externalservice-1.0.0.tgz
     version: 1.0.0
   flaresolverr:
+  - apiVersion: v2
+    appVersion: v3.3.21
+    created: "2025-05-12T20:17:09.702562954Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: 0b47f56cea121c12edc9b7ebc19c0a1ffeb2e10bce13329cdbe7112ac95defeb
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-2.0.0/flaresolverr-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: v3.3.21
     created: "2024-12-25T11:12:02.020374016Z"
@@ -717,6 +749,22 @@ entries:
   overseerr:
   - apiVersion: v2
     appVersion: 1.34.0
+    created: "2025-05-12T20:17:09.816862315Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Overseerr is a request management and media discovery tool built
+      to work with your existing Plex ecosystem.
+    digest: ea8ef4ac1f12c97de51df3ac3a8bd98f76f5c7a26477113ad010ef2f8dffd2b4
+    name: overseerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/overseerr-2.0.0/overseerr-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: 1.34.0
     created: "2025-03-26T15:18:04.108397168Z"
     dependencies:
     - import-values:
@@ -900,6 +948,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/photoprism-1.0.0/photoprism-1.0.0.tgz
     version: 1.0.0
   prowlarr:
+  - apiVersion: v2
+    appVersion: 1.35.1
+    created: "2025-05-12T20:17:09.928183719Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 2bc71510bd281fd1269b6e0f48a9ff1055419a004e2725b88af9328c75f7b4b9
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-2.0.0/prowlarr-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: 1.35.1
     created: "2025-05-05T16:24:16.155416141Z"
@@ -1093,6 +1157,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 5.22.4
+    created: "2025-05-12T20:17:10.039126802Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 57bc0273535677b95372dd9b2d8bde22b03064b6544cf6051e54f17d1fc15126
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-2.0.0/radarr-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: 5.22.4
     created: "2025-05-05T16:23:47.98769878Z"
@@ -1405,6 +1485,23 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.14
+    created: "2025-05-12T20:17:10.168408645Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: aae81b93f7f3ef6dfb94925a7c28dc9dfe1723b782ba1bb76ffbe4056e2f598f
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-2.0.0/sonarr-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: 4.0.14
     created: "2025-03-20T20:38:40.125834448Z"
@@ -1815,6 +1912,22 @@ entries:
   tautulli:
   - apiVersion: v2
     appVersion: 2.15.2
+    created: "2025-05-12T20:17:10.289741844Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Tautulli is a 3rd party application that you can run alongside your
+      Plex Media Server to monitor activity and track various statistics.
+    digest: 88caf87521fccf445ab1e56d10abb815e7933ce804936c3e55405c4b1b728afe
+    name: tautulli
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tautulli-2.0.0/tautulli-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: 2.15.2
     created: "2025-05-05T16:24:16.275893557Z"
     dependencies:
     - import-values:
@@ -1984,4 +2097,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-06T19:22:26.044629849Z"
+generated: "2025-05-12T20:17:10.289982996Z"
