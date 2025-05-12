@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/jellyfin
-  tag: 10.10.6
+  tag: 10.10.7
 
 ports:
   - name: http
