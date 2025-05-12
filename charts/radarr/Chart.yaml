@@ -3,10 +3,10 @@ appVersion: 5.22.4
 home: https://github.com/Radarr/Radarr
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr
-version: 1.9.0
+version: 2.0.0
 dependencies:
-  - name: helmet
-    version: 0.6.5
-    repository: https://companyinfo.github.io/helm-charts
+  - name: common
+    version: 0.2.1
+    repository: https://common-chart.home-net.app
     import-values:
-      - defaults
+      - default

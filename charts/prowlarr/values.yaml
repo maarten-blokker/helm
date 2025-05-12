@@ -1,11 +1,11 @@
 image:
   repository: linuxserver/prowlarr
   tag: 1.35.1
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 9696
+    servicePort: 80
     protocol: TCP
 
 livenessProbe:
@@ -17,7 +17,7 @@ livenessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 5
-  successThreshold: 1
+
 readinessProbe:
   enabled: true
   initialDelaySeconds: 5

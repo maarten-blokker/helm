@@ -2,10 +2,10 @@ apiVersion: v2
 appVersion: "v3.3.21"
 description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
 name: flaresolverr
-version: 1.0.3
+version: 2.0.0
 dependencies:
-  - name: helmet
-    version: 0.6.5
-    repository: https://companyinfo.github.io/helm-charts
+  - name: common
+    version: 0.2.1
+    repository: https://common-chart.home-net.app
     import-values:
-      - defaults
+      - default
