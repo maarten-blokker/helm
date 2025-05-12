@@ -1,16 +1,12 @@
 image:
   repository: linuxserver/jellyfin
   tag: 10.10.6
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 8096
+    servicePort: 80
     protocol: TCP
-
-# Need to completely shut down all instances due to database lock
-updateStrategy:
-  type: Recreate
 
 readinessProbe:
   enabled: true
@@ -27,22 +23,8 @@ livenessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 3
-  successThreshold: 1
   httpGet:
     path: /health
     port: http
 
-#envVars:
-#  - name: JELLYFIN_PublishedServerUrl
-#    value: 192.168.0.5
-
-ingress:
-  enabled: false
-
-pvcs: []
-#  - name: config
-#    annotations: {}
-#    accessModes:
-#      - ReadWriteOnce
-#    request:
-#      storage: 128Mi
+persistentVolumeClaims: [ ]
