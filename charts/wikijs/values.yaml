@@ -1,20 +1,12 @@
 image:
   repository: linuxserver/wikijs
   tag: 2.5.307
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 3000
+    servicePort: 80
     protocol: TCP
-
-resources:
-  requests:
-    memory: "128Mi"
-    cpu: "150m"
-  limits:
-    memory: "256Mi"
-    cpu: "300m"
 
 livenessProbe:
   enabled: true
