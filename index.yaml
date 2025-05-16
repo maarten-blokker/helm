@@ -109,6 +109,19 @@ entries:
     version: 0.0.1
   externalsecret:
   - apiVersion: v2
+    created: "2025-05-16T12:59:57.561540668Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.31.1
+    description: Utility to create external secrets using "external-secrets" CRD
+    digest: 86309f671bc51daa1cb9982c58b26122d431c66b3bd682a3a378186dd7bc92fe
+    name: externalsecret
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/externalsecret-0.3.0/externalsecret-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2023-10-21T20:44:44.567773368Z"
     dependencies:
     - name: common
@@ -1472,6 +1485,20 @@ entries:
     version: 1.0.0
   secretstore:
   - apiVersion: v2
+    created: "2025-05-16T12:59:57.712135806Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.31.1
+    description: Utility to create external secret stores using "external-secrets"
+      CRD
+    digest: ee3500dbea660f266115e85eb0d2a2a3460f565ca31713008b1445ae66e48316
+    name: secretstore
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.2.0/secretstore-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     created: "2023-10-15T19:38:00.446219624Z"
     dependencies:
     - name: common
@@ -2112,4 +2139,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-12T20:20:51.771666933Z"
+generated: "2025-05-16T12:59:57.712418695Z"
