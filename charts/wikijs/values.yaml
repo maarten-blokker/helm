@@ -29,14 +29,7 @@ startupProbe:
     path: /
     port: http
 
-ingress:
-  enabled: true
-  hostname: wiki.example.com
-  tls: true
-  annotations:
-    cert-manager.io/cluster-issuer: "clusterissuer"
-
-envVars:
+envVarsBase:
   - name: DB_TYPE
     value: postgres
   - name: DB_NAME
