@@ -1,6 +1,6 @@
 dependencies:
-- name: helmet
-  repository: https://companyinfo.github.io/helm-charts
-  version: 0.14.0
-digest: sha256:ec3c49327aa56cc3383edab13ccd5324bdd0d292a5df3be006b02653dbf03a9d
-generated: "2025-03-20T21:28:47.720587+01:00"
+- name: common
+  repository: https://common-chart.home-net.app
+  version: 1.0.1
+digest: sha256:1cba03186fcacee812e98541cc4e53928d000c6c2083c9c634220e7ec9ebc214
+generated: "2025-05-18T22:19:15.129581+02:00"
