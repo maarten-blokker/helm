@@ -2111,6 +2111,21 @@ entries:
   wikijs:
   - apiVersion: v2
     appVersion: 2.5.307
+    created: "2025-05-18T19:22:35.327000855Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: The most powerful and extensible open source Wiki software.
+    digest: fb4e93a0cd96449c911b626eb4f50e6345b20aa24ec82bd042aa5ba8b6829697
+    name: wikijs
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.5/wikijs-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 2.5.307
     created: "2025-05-17T09:21:22.083088337Z"
     dependencies:
     - import-values:
@@ -2169,4 +2184,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-17T09:21:22.083355907Z"
+generated: "2025-05-18T19:22:35.327241259Z"
