@@ -1,23 +1,12 @@
 image:
   repository: danielszabo99/microbin
   tag: 2.0.4
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 8080
+    servicePort: 80
     protocol: TCP
-
-resources:
-  requests:
-    memory: "32Mi"
-    cpu: "200m"
-  limits:
-    memory: "32Mi"
-    cpu: "200m"
-
-ingress:
-  enabled: false
 
 livenessProbe:
   enabled: true
@@ -35,7 +24,7 @@ readinessProbe:
     path: /
     port: http
 
-envVars:
+envVarsBase:
   - name: 'MICROBIN_TITLE'
     value: 'Homenet paste bin'
   - name: 'MICROBIN_DISABLE_TELEMETRY'
