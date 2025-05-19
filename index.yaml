@@ -2035,6 +2035,21 @@ entries:
   transmission:
   - apiVersion: v2
     appVersion: 4.0.6
+    created: "2025-05-19T20:02:34.319219727Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: Transmission, A fast, easy and free Bittorrent client
+    digest: 7dafdbc083e984783f081ae06a998d2466457282692827cb171811ba16797fc1
+    name: transmission
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/transmission-3.0.0/transmission-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
+    appVersion: 4.0.6
     created: "2024-12-14T21:29:25.313641027Z"
     dependencies:
     - import-values:
@@ -2215,4 +2230,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-18T20:52:29.544595736Z"
+generated: "2025-05-19T20:02:34.319734776Z"
