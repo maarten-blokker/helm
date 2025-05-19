@@ -1,11 +1,11 @@
 image:
   repository: linuxserver/transmission
   tag: 4.0.6
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 9091
+    servicePort: 80
     protocol: TCP
 
 readinessProbe:
