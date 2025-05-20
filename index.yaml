@@ -933,6 +933,21 @@ entries:
   photoprism:
   - apiVersion: v2
     appVersion: "231128"
+    created: "2025-05-20T18:45:12.891251725Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: PhotoPrism is an AI-Powered Photos App for the Decentralized Web.
+    digest: b9d1ad15600b63aa1883c79fc85e3c2c90628151d2379ffcc63e225beb88b997
+    name: photoprism
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/photoprism-2.0.0/photoprism-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: "231128"
     created: "2024-02-05T19:58:15.912749088Z"
     dependencies:
     - import-values:
@@ -2245,4 +2260,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-20T18:41:27.276443647Z"
+generated: "2025-05-20T18:45:12.891447893Z"
