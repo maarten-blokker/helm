@@ -1,15 +1,12 @@
 image:
   repository: vabene1111/recipes
   tag: "1.5.34"
-  pullPolicy: IfNotPresent
 
 ports:
   - name: http
     containerPort: 8080
+    servicePort: 80
     protocol: TCP
-
-ingress:
-  enabled: false
 
 readinessProbe:
   enabled: true
