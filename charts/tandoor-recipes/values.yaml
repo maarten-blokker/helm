@@ -10,11 +10,11 @@ ports:
 
 readinessProbe:
   enabled: true
-  initialDelaySeconds: 10
-  periodSeconds: 1
-  failureThreshold: 20
+  initialDelaySeconds: 15
+  periodSeconds: 2
+  failureThreshold: 10
   httpGet:
-    path: /
+    path: /api/
     port: http
 
 livenessProbe:
@@ -23,5 +23,5 @@ livenessProbe:
   periodSeconds: 5
   failureThreshold: 3
   httpGet:
-    path: /
+    path: /api/
     port: http
