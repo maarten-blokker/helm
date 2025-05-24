@@ -4,10 +4,10 @@ home: https://github.com/Sonarr/Sonarr
 name: sonarr
 description: Sonarr is a PVR for usenet and bittorrent users.
 type: application
-version: 2.0.0
+version: 2.0.1
 dependencies:
   - name: common
-    version: 0.2.1
+    version: 1.0.1
     repository: https://common-chart.home-net.app
     import-values:
       - default
