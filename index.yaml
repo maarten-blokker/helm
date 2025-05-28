@@ -1608,6 +1608,17 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-1.0.0/sabnzbd-1.0.0.tgz
     version: 1.0.0
+  secret:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-28T19:24:01.472877803Z"
+    description: A Helm chart for a single secret
+    digest: e3d1869a7f68c97b5ed1312b031937f026cd6ac1ae0732e7c6f7160b6edf051b
+    name: secret
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/secret-1.0.0/secret-1.0.0.tgz
+    version: 1.0.0
   secretstore:
   - apiVersion: v2
     created: "2025-05-16T12:59:57.712135806Z"
@@ -2423,4 +2434,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-24T12:24:07.480271584Z"
+generated: "2025-05-28T19:24:01.473498473Z"
