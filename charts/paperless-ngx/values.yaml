@@ -6,6 +6,7 @@ image:
 ports:
   - name: http
     containerPort: 8000
+    servicePort: 80
     protocol: TCP
 
 ingress:
