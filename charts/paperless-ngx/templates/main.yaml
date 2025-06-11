@@ -1,1 +1,1 @@
-\{{ include "common.main" . }}
+{{ include "common.main" . }}
