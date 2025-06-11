@@ -29,6 +29,6 @@ livenessProbe:
     path: /
     port: http
 
-envVars:
+envVarsBase:
   - name: "PAPERLESS_PORT"
     value: "8000"
