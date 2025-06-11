@@ -889,6 +889,24 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: "2.15"
+    created: "2025-06-11T21:30:25.044648695Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Paperless-ngx is a community-supported open-source document management
+      system that transforms your physical documents into a searchable online archive
+      so you can keep, well, less paper.
+    digest: 3b31fbaa04071e80e31f4b7bdb4c011049ab21e15a584fc6bffc6cba9a14042d
+    name: paperless-ngx
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/paperless-ngx-1.0.2/paperless-ngx-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: "2.15"
     created: "2025-06-11T21:26:19.797689425Z"
     dependencies:
     - import-values:
@@ -2470,4 +2488,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-11T21:26:19.797893018Z"
+generated: "2025-06-11T21:30:25.044924796Z"
