@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 10.10.6
+appVersion: 10.10.7
 description: The Free Software Media System
 name: jellyfin
 version: 2.0.1
