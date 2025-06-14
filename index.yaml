@@ -2,6 +2,22 @@ apiVersion: v1
 entries:
   bazarr:
   - apiVersion: v2
+    appVersion: 1.5.2
+    created: "2025-06-14T12:21:46.422204391Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: Bazarr is a companion application to Sonarr and Radarr that manages
+      and downloads subtitles based on your requirements.
+    digest: 2384551cd80524292a10cb8c4babb263c3fa7d58e9005e241e7da566af61c81d
+    name: bazarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/bazarr-2.0.1/bazarr-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
     appVersion: 1.4.5
     created: "2025-05-12T20:17:09.586746421Z"
     dependencies:
@@ -2554,4 +2570,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-14T12:21:22.431214312Z"
+generated: "2025-06-14T12:21:46.422439927Z"
