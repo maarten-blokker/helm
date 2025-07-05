@@ -1208,6 +1208,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/photoprism-1.0.0/photoprism-1.0.0.tgz
     version: 1.0.0
+  profilarr:
+  - apiVersion: v2
+    appVersion: v1.0.1
+    created: "2025-07-05T15:35:21.236446292Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Configuration management and auto-import tool for Radarr/Sonarr custom
+      formats and profiles.
+    digest: 368c56d2f83bd879a2a94faf30b35b63379615b226eba4b9e98676b6b6ccd457
+    name: profilarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/profilarr-1.0.0/profilarr-1.0.0.tgz
+    version: 1.0.0
   prowlarr:
   - apiVersion: v2
     appVersion: 1.37.0
@@ -2654,4 +2671,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-29T15:59:23.445331176Z"
+generated: "2025-07-05T15:35:21.236720518Z"
