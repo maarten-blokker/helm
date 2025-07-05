@@ -1,0 +1,28 @@
+image:
+  repository: santiagosayshey/profilarr
+  tag: v1.0.1
+
+ports:
+  - name: http
+    containerPort: 6868
+    servicePort: 80
+    protocol: TCP
+
+livenessProbe:
+  enabled: true
+  httpGet:
+    path: /
+    port: http
+  initialDelaySeconds: 20
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 5
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 5
+  periodSeconds: 1
+  failureThreshold: 15
+  httpGet:
+    path: /
+    port: http
