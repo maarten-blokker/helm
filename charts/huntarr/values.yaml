@@ -8,6 +8,10 @@ ports:
     servicePort: 80
     protocol: TCP
 
+envVarsBase:
+  - name: HUNTARR_PORT
+    value: "9705"
+
 livenessProbe:
   enabled: true
   initialDelaySeconds: 20
