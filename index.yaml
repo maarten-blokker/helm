@@ -419,6 +419,22 @@ entries:
   huntarr:
   - apiVersion: v2
     appVersion: 8.1.11
+    created: "2025-07-13T10:43:09.963353341Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Huntarr is an automatic missing content hunter for Sonarr, Radarr,
+      Lidarr, Readarr, and Whisparr.
+    digest: 3ade8fd77f99210efbe3d20779144cb41308ab25ef536c3c34323d1b0009512b
+    name: huntarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/huntarr-1.0.1/huntarr-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 8.1.11
     created: "2025-07-12T10:40:20.55023664Z"
     dependencies:
     - import-values:
@@ -726,6 +742,23 @@ entries:
     name: jellyfin
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
+    version: 1.0.0
+  maintainerr:
+  - apiVersion: v2
+    appVersion: 2.18.2
+    created: "2025-07-13T10:43:10.151266836Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Maintainerr is a one-stop-shop for handling outlying shows and movies
+      that take up precious space on your server.
+    digest: e43dd238b3b08167f7f21642f519e24c2d50bf0f0f45d418d5a4c36b9949cb36
+    name: maintainerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/maintainerr-1.0.0/maintainerr-1.0.0.tgz
     version: 1.0.0
   metallb-config:
   - apiVersion: v2
@@ -2688,4 +2721,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-12T10:40:20.550494764Z"
+generated: "2025-07-13T10:43:10.15153086Z"
