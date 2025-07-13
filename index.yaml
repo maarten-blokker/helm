@@ -1804,6 +1804,21 @@ entries:
     version: 1.0.0
   sabnzbd:
   - apiVersion: v2
+    appVersion: 4.5.2
+    created: "2025-07-13T12:11:18.324048264Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: The free and easy binary newsreader
+    digest: 16b3cb8f4b08086f79ed80f60606ce19cae950a79f2034d09fae4db6eeab4978
+    name: sabnzbd
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-2.0.1/sabnzbd-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
     appVersion: 4.5.1
     created: "2025-05-20T18:41:27.276181561Z"
     dependencies:
@@ -2721,4 +2736,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-13T10:43:10.15153086Z"
+generated: "2025-07-13T12:11:18.324662461Z"
