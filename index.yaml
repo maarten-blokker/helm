@@ -335,6 +335,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-1.0.0/flaresolverr-1.0.0.tgz
     version: 1.0.0
+  heimdall:
+  - apiVersion: v2
+    appVersion: 2.6.3
+    created: "2025-07-13T12:40:45.742069144Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Heimdall is a way to organise all those links to your most used web
+      sites and web applications in a simple way.
+    digest: 69abc2e6006e2c448291bfd062b45b737323af5e47c6b6cecd655fa0b76dd473
+    name: heimdall
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/heimdall-1.0.0/heimdall-1.0.0.tgz
+    version: 1.0.0
   homer:
   - apiVersion: v2
     appVersion: v25.03.3
@@ -2785,4 +2802,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-13T12:16:09.679957732Z"
+generated: "2025-07-13T12:40:45.742349237Z"
