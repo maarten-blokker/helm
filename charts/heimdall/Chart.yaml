@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: 2.6.3
 description: Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.
-name: bazarr
+name: heimdall
 version: 1.0.0
 dependencies:
   - name: common
