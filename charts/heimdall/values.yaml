@@ -1,0 +1,29 @@
+image:
+  repository: linuxserver/heimdall
+  tag: 2.6.3
+
+ports:
+  - name: http
+    containerPort: 80
+    servicePort: 80
+    protocol: TCP
+
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 20
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 5
+  successThreshold: 1
+  httpGet:
+    path: /
+    port: http
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 5
+  periodSeconds: 1
+  failureThreshold: 15
+  httpGet:
+    path: /
+    port: http
