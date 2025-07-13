@@ -857,6 +857,22 @@ entries:
     version: 1.0.0
   mosquitto:
   - apiVersion: v2
+    appVersion: 2.0.22
+    created: "2025-07-13T12:16:09.679765219Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Eclipse Mosquitto is an open source message broker which implements
+      MQTT version 5, 3.1.1 and 3.1
+    digest: 25755a772b989cd8a40e2fbdd79e509d7269f612a7ca3d72fbd57236efcc2060
+    name: mosquitto
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/mosquitto-3.0.1/mosquitto-3.0.1.tgz
+    version: 3.0.1
+  - apiVersion: v2
     appVersion: 2.0.21
     created: "2025-06-12T19:33:23.664049287Z"
     dependencies:
@@ -2769,4 +2785,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-13T12:15:48.447642383Z"
+generated: "2025-07-13T12:16:09.679957732Z"
