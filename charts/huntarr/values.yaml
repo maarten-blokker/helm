@@ -1,6 +1,6 @@
 image:
   repository: huntarr/huntarr
-  tag: 8.1.11
+  tag: 8.1.15
 
 ports:
   - name: http
