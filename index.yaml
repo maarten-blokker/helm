@@ -517,6 +517,22 @@ entries:
   it-tools:
   - apiVersion: v2
     appVersion: 2024.5.13-a0bc346
+    created: "2025-07-20T19:45:44.70416221Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Collection of handy online tools for developers, with great UX as
+      a web app.
+    digest: 3d2f66020e330b9a6829946a6d268ab47828fe02a8ee91f8776d5f8e59555c9f
+    name: it-tools
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/it-tools-3.4.1/it-tools-3.4.1.tgz
+    version: 3.4.1
+  - apiVersion: v2
+    appVersion: 2024.5.13-a0bc346
     created: "2025-05-24T12:24:06.993190451Z"
     dependencies:
     - import-values:
@@ -2834,4 +2850,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-17T20:26:14.107507859Z"
+generated: "2025-07-20T19:45:44.704692461Z"
