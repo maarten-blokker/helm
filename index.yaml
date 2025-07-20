@@ -824,6 +824,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
     version: 1.0.0
+  joplin:
+  - apiVersion: v2
+    appVersion: 2024.5.13-a0bc346
+    created: "2025-07-20T20:11:45.059892471Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Collection of handy online tools for developers, with great UX as
+      a web app.
+    digest: 98bac5cdaa486220c842250835e35389ee9607325fd448f0146409eaad23e657
+    name: joplin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/joplin-1.0.0/joplin-1.0.0.tgz
+    version: 1.0.0
   maintainerr:
   - apiVersion: v2
     appVersion: 2.18.2
@@ -2850,4 +2867,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-07-20T19:45:44.704692461Z"
+generated: "2025-07-20T20:11:45.06007925Z"
