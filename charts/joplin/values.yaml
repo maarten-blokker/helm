@@ -1,0 +1,29 @@
+image:
+  repository: joplin/server
+  tag: 3.4.1
+  pullPolicy: IfNotPresent
+
+ports:
+  - name: http
+    servicePort: 22300
+    containerPort: 22300
+    protocol: TCP
+
+ingress:
+  enabled: false
+
+livenessProbe:
+  enabled: true
+  periodSeconds: 3
+  httpGet:
+    path: /
+    port: http
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 3
+  periodSeconds: 1
+  failureThreshold: 12
+  httpGet:
+    path: /
+    port: http

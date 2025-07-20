@@ -1,0 +1,11 @@
+apiVersion: v2
+appVersion: "2024.5.13-a0bc346"
+description: Collection of handy online tools for developers, with great UX as a web app.
+name: it-tools
+version: 3.4.1
+dependencies:
+  - name: common
+    version: 1.1.0
+    repository: https://common-chart.home-net.app
+    import-values:
+      - default
