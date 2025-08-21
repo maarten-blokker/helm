@@ -1,6 +1,6 @@
 image:
   repository: santiagosayshey/profilarr
-  tag: v1.0.1
+  tag: v1.1.2
 
 ports:
   - name: http
