@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 4.5.2
+appVersion: 4.5.3
 description: The free and easy binary newsreader
 name: sabnzbd
-version: 2.0.1
+version: 2.0.2
 dependencies:
   - name: common
     version: 1.0.1
