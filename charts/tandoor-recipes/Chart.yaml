@@ -2,8 +2,8 @@ apiVersion: v2
 name: tandoor-recipes
 description: The recipe manager that allows you to manage your ever growing collection of digital recipes.
 type: application
-version: 1.0.3
-appVersion: 1.5.35
+version: 2.0.0
+appVersion: 2.1.0
 dependencies:
   - name: common
     version: 1.0.1
