@@ -2653,6 +2653,22 @@ entries:
     version: 0.1.0
   tautulli:
   - apiVersion: v2
+    appVersion: 2.15.3
+    created: "2025-09-07T12:43:41.879167583Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: Tautulli is a 3rd party application that you can run alongside your
+      Plex Media Server to monitor activity and track various statistics.
+    digest: 0631ea3b0773232d94e8bbd7efe4609f29ec3e4d240f4b789c971d89547d676d
+    name: tautulli
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tautulli-2.1.1/tautulli-2.1.1.tgz
+    version: 2.1.1
+  - apiVersion: v2
     appVersion: 2.15.2
     created: "2025-05-20T18:53:00.35146754Z"
     dependencies:
@@ -2930,4 +2946,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-09-07T12:43:17.666572429Z"
+generated: "2025-09-07T12:43:41.879627296Z"
