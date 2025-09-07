@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 2.5.307
+appVersion: 2.5.308
 description: The most powerful and extensible open source Wiki software.
 name: wikijs
 version: 0.0.5
