@@ -467,6 +467,22 @@ entries:
     version: 1.0.0
   huntarr:
   - apiVersion: v2
+    appVersion: 8.2.10
+    created: "2025-09-07T12:43:17.666340785Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Huntarr is an automatic missing content hunter for Sonarr, Radarr,
+      Lidarr, Readarr, and Whisparr.
+    digest: 7d38ad673341b96355bacc7d55f589cd4bdbc5b4dce14461184359c435504ba2
+    name: huntarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/huntarr-1.1.0/huntarr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 8.1.15
     created: "2025-07-17T20:26:14.107257913Z"
     dependencies:
@@ -2914,4 +2930,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-09-07T12:42:29.744416292Z"
+generated: "2025-09-07T12:43:17.666572429Z"
