@@ -891,6 +891,22 @@ entries:
     version: 1.0.0
   maintainerr:
   - apiVersion: v2
+    appVersion: 2.19.0
+    created: "2025-09-11T19:32:51.906003848Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Maintainerr is a one-stop-shop for handling outlying shows and movies
+      that take up precious space on your server.
+    digest: 57a73a7ab272b8b245853d43bd19a6d24e6723feb010d8e25be5f20620e30356
+    name: maintainerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/maintainerr-1.1.0/maintainerr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 2.18.2
     created: "2025-07-13T10:43:10.151266836Z"
     dependencies:
@@ -1472,6 +1488,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/profilarr-1.0.0/profilarr-1.0.0.tgz
     version: 1.0.0
   prowlarr:
+  - apiVersion: v2
+    appVersion: 2.0.5
+    created: "2025-09-11T19:32:52.084277828Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 536a24df9c54fc7723dad8e52e7c3e049719e4289fd9de5697b87f2f5b79633b
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-3.0.0/prowlarr-3.0.0.tgz
+    version: 3.0.0
   - apiVersion: v2
     appVersion: 1.37.0
     created: "2025-06-14T12:20:32.036645929Z"
@@ -3046,4 +3078,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-09-11T19:32:24.626941968Z"
+generated: "2025-09-11T19:32:52.084702732Z"
