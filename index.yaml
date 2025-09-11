@@ -256,6 +256,22 @@ entries:
     version: 1.0.0
   flaresolverr:
   - apiVersion: v2
+    appVersion: v3.4.0
+    created: "2025-09-11T19:32:24.62664303Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 0.2.1
+    description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD
+      protection.
+    digest: 588d348b891378122f5423e91f178f8a2cc3c6bc58d73d9a49f24390b0a6cbbc
+    name: flaresolverr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/flaresolverr-2.1.0/flaresolverr-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
     appVersion: v3.3.25
     created: "2025-06-14T12:20:48.699947891Z"
     dependencies:
@@ -3030,4 +3046,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-09-11T19:32:02.899419462Z"
+generated: "2025-09-11T19:32:24.626941968Z"
