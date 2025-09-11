@@ -1,6 +1,6 @@
 image:
   repository: joplin/server
-  tag: 3.4.1
+  tag: 3.4.3
   pullPolicy: IfNotPresent
 
 ports:
