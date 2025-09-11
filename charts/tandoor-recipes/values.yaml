@@ -1,6 +1,6 @@
 image:
   repository: vabene1111/recipes
-  tag: "2.1.0"
+  tag: "2.2.0"
 
 ports:
   - name: http
