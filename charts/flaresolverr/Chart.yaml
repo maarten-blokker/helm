@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: v3.3.25
+appVersion: v3.4.0
 description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
 name: flaresolverr
-version: 2.0.1
+version: 2.1.0
 dependencies:
   - name: common
     version: 0.2.1
