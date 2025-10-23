@@ -1,6 +1,6 @@
 dependencies:
 - name: common
   repository: https://common-chart.home-net.app
-  version: 1.0.1
-digest: sha256:1cba03186fcacee812e98541cc4e53928d000c6c2083c9c634220e7ec9ebc214
-generated: "2025-05-24T14:21:50.172772+02:00"
+  version: 1.1.0
+digest: sha256:760fcbb9b88f2eb67d62169f7c5f428e6e307948aca3682b369a23edb8381035
+generated: "2025-10-23T22:19:41.195803+02:00"
