@@ -401,6 +401,22 @@ entries:
     version: 1.0.0
   heimdall:
   - apiVersion: v2
+    appVersion: 2.7.6
+    created: "2025-10-23T20:04:15.231648475Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Heimdall is a way to organise all those links to your most used web
+      sites and web applications in a simple way.
+    digest: 479a5c85a84f4b07b451980b2839f24f49dfc64e791f60e560ea5703d335abff
+    name: heimdall
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
     appVersion: 2.7.5
     created: "2025-09-11T19:33:12.573914127Z"
     dependencies:
@@ -3126,4 +3142,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-23T20:03:45.189575612Z"
+generated: "2025-10-23T20:04:15.231895619Z"
