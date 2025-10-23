@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 2.2.3
+appVersion: 2.3.3
 description: Cleanuparr is a tool for automating the cleanup of unwanted or blocked files in Sonarr, Radarr, and supported download clients like qBittorrent.
 name: cleanuparr
-version: 1.1.0
+version: 1.2.0
 dependencies:
   - name: common
     version: 1.1.0
