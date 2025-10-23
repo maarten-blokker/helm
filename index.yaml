@@ -3,6 +3,22 @@ entries:
   bazarr:
   - apiVersion: v2
     appVersion: 1.5.3
+    created: "2025-10-23T20:18:21.420674697Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Bazarr is a companion application to Sonarr and Radarr that manages
+      and downloads subtitles based on your requirements.
+    digest: 0324234d61bcd4b8bcbd1ad1f80bb663540d21c96d5741ef77438541ad49d860
+    name: bazarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/bazarr-3.0.0/bazarr-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
+    appVersion: 1.5.3
     created: "2025-10-23T20:03:17.542411451Z"
     dependencies:
     - import-values:
@@ -1181,6 +1197,22 @@ entries:
   overseerr:
   - apiVersion: v2
     appVersion: 1.34.0
+    created: "2025-10-23T20:18:21.641141065Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Overseerr is a request management and media discovery tool built
+      to work with your existing Plex ecosystem.
+    digest: e0564c4c75e83744065e053b13647259f668d5179984c3ec0ce5372ea46c6ca8
+    name: overseerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/overseerr-2.1.0/overseerr-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
+    appVersion: 1.34.0
     created: "2025-05-24T12:16:55.942029436Z"
     dependencies:
     - import-values:
@@ -1552,6 +1584,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/profilarr-1.0.0/profilarr-1.0.0.tgz
     version: 1.0.0
   prowlarr:
+  - apiVersion: v2
+    appVersion: 2.0.5
+    created: "2025-10-23T20:18:21.883905283Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 12e22e115efc24c474c250253db89ec4b1e4743e99eb64e29e926e89985c5017
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-3.1.0/prowlarr-3.1.0.tgz
+    version: 3.1.0
   - apiVersion: v2
     appVersion: 2.0.5
     created: "2025-09-11T19:32:52.084277828Z"
@@ -3159,4 +3207,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-23T20:04:43.853914572Z"
+generated: "2025-10-23T20:18:21.884408043Z"
