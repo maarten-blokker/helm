@@ -5,7 +5,7 @@ name: flaresolverr
 version: 2.1.0
 dependencies:
   - name: common
-    version: 0.2.1
+    version: 1.1.0
     repository: https://common-chart.home-net.app
     import-values:
       - default
