@@ -1859,6 +1859,22 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 5.27.5
+    created: "2025-10-23T20:21:17.113727078Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 2d0dc2d17c5074ba0e8d837571bc1e8c1437c9380775d1e472c51ab70920bcb9
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-2.4.0/radarr-2.4.0.tgz
+    version: 2.4.0
+  - apiVersion: v2
+    appVersion: 5.27.5
     created: "2025-09-07T12:37:15.128273046Z"
     dependencies:
     - import-values:
@@ -3207,4 +3223,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-23T20:18:21.884408043Z"
+generated: "2025-10-23T20:21:17.114203506Z"
