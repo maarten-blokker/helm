@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/heimdall
-  tag: 2.7.5
+  tag: 2.7.6
 
 ports:
   - name: http
