@@ -2,10 +2,10 @@ apiVersion: v2
 appVersion: 4.5.3
 description: The free and easy binary newsreader
 name: sabnzbd
-version: 2.0.2
+version: 2.1.0
 dependencies:
   - name: common
-    version: 1.0.1
+    version: 1.1.0
     repository: https://common-chart.home-net.app
     import-values:
       - default
