@@ -2177,6 +2177,21 @@ entries:
   sabnzbd:
   - apiVersion: v2
     appVersion: 4.5.3
+    created: "2025-10-23T20:27:04.39637776Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: The free and easy binary newsreader
+    digest: 1bf5852daa0ce3c91c9b501cbdbfbdb7eaff52d414f0530f7aaa34421bb2da91
+    name: sabnzbd
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-2.1.0/sabnzbd-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
+    appVersion: 4.5.3
     created: "2025-09-07T12:37:50.098585401Z"
     dependencies:
     - import-values:
@@ -3061,6 +3076,21 @@ entries:
   transmission:
   - apiVersion: v2
     appVersion: 4.0.6
+    created: "2025-10-23T20:27:04.658993317Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Transmission, A fast, easy and free Bittorrent client
+    digest: aeb2f08ff932772518158443ea72431bac07fa4bb7d2937237f27be21974d575
+    name: transmission
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/transmission-3.1.0/transmission-3.1.0.tgz
+    version: 3.1.0
+  - apiVersion: v2
+    appVersion: 4.0.6
     created: "2025-05-19T20:02:34.319219727Z"
     dependencies:
     - import-values:
@@ -3256,4 +3286,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-23T20:23:34.999032492Z"
+generated: "2025-10-23T20:27:04.659349231Z"
