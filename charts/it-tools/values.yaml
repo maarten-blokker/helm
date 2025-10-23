@@ -9,17 +9,6 @@ ports:
     containerPort: 80
     protocol: TCP
 
-resources:
-  requests:
-    memory: "32Mi"
-    cpu: "100m"
-  limits:
-    memory: "32Mi"
-    cpu: "100m"
-
-ingress:
-  enabled: false
-
 livenessProbe:
   enabled: true
   periodSeconds: 3
