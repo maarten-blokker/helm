@@ -985,6 +985,19 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/joplin-1.0.0/joplin-1.0.0.tgz
     version: 1.0.0
+  kometa:
+  - apiVersion: v2
+    appVersion: 2.2.2
+    created: "2025-12-28T20:08:28.842553784Z"
+    description: Kometa is a powerful tool designed to give you complete control over
+      your media libraries. With Kometa, you can take your customization to the next
+      level, with granular control over metadata, collections, overlays, and much
+      more.
+    digest: cd754d4b9e63a46087089ce99e6efafdab854b401a2ad6cc24808026ae06ab75
+    name: kometa
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/kometa-1.0.0/kometa-1.0.0.tgz
+    version: 1.0.0
   maintainerr:
   - apiVersion: v2
     appVersion: 2.19.0
@@ -3302,4 +3315,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-23T20:30:27.458969316Z"
+generated: "2025-12-28T20:08:28.84299905Z"
