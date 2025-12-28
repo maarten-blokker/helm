@@ -1,0 +1,18 @@
+---
+{{- range .Values.persistentVolumeClaims }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "kometa.fullname" $ }}-{{ .name }}
+  labels:
+    {{- include "kometa.labels" $ | nindent 4 }}
+spec:
+  accessModes:
+    {{- toYaml (.accessModes | default (list "ReadWriteOnce")) | nindent 4 }}
+  resources:
+    {{- toYaml .resources | nindent 4 }}
+  {{- if .storageClassName }}
+  storageClassName: {{ .storageClassName }}
+  {{- end }}
+---
+{{- end }}

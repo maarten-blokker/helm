@@ -1,0 +1,59 @@
+image:
+  repository: linuxserver/kometa
+  pullPolicy: IfNotPresent
+  tag: 2.2.2
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  automount: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+resources: {}
+
+# Example:
+# volumes:
+#   - name: config
+#     configMap:
+#       name: app-config
+#     mount:
+#       mountPath: /config/app.yaml
+#       subPath: app.yaml
+volumes: []
+
+# Example:
+# persistentVolumeClaims:
+#   - name: data
+#     mount:
+#       mountPath: /data
+persistentVolumeClaims: []
+
+schedule: "0 0 * * *"
+args: [ "--run", "--read-only-config" ]
+
+envVarsBase:
+  - name: 'KOMETA_CONFIG'
+    value: '/config/config.yml'
+
+kometa:
+  config:
+    settings:
+      cache: false
+    libraries: {}

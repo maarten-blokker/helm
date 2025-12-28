@@ -1,0 +1,109 @@
+{{- $volumes := list }}
+{{- $volumeMounts := list }}
+{{- $envVars := dict }}
+
+{{- range .Values.volumes }}
+  {{- $volume := omit . "mount" }}
+  {{- $volumes = append $volumes $volume }}
+  {{- if hasKey . "mount" }}
+    {{- $volumeMount := merge (dict "name" .name) .mount }}
+    {{- $volumeMounts = append $volumeMounts $volumeMount }}
+  {{- end }}
+{{- end }}
+
+{{- $volumes = append $volumes (dict
+  "name" "config"
+  "secret" (dict "secretName" (printf "%s-%s" (include "kometa.fullname" $) "config"))
+)}}
+
+{{- $volumeMounts = append $volumeMounts (dict
+  "name" "config"
+  "mountPath" "/config/config.yml"
+  "subPath" "config.yml"
+  "readOnly" "true"
+)}}
+
+{{- range .Values.persistentVolumeClaims }}
+  {{- $volume := dict
+      "name" .name
+      "persistentVolumeClaim"
+        (dict "claimName" (printf "%s-%s" (include "kometa.fullname" $) .name))
+  }}
+  {{- $volumes = append $volumes $volume }}
+
+  {{- if hasKey . "mount" }}
+    {{- $volumeMount := merge (dict "name" .name) .mount }}
+    {{- $volumeMounts = append $volumeMounts $volumeMount }}
+  {{- end }}
+{{- end }}
+
+{{- range .Values.envVarsBase }}
+  {{- $_ := set $envVars .name . }}
+{{- end }}
+{{- range .Values.envVars }}
+  {{- $_ := set $envVars .name . }}
+{{- end }}
+
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "kometa.fullname" . }}
+  labels:
+    {{- include "kometa.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.schedule | quote }}
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          {{- with .Values.podAnnotations }}
+          annotations:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          labels:
+            {{- include "kometa.selectorLabels" . | nindent 12 }}
+        spec:
+          restartPolicy: {{ .Values.restartPolicy | default "OnFailure" }}
+          {{- with .Values.securityContext }}
+          securityContext:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          serviceAccountName: {{ include "kometa.serviceAccountName" . }}
+          containers:
+            - name: {{ include "kometa.name" . }}
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy | default "IfNotPresent" }}
+              {{- if .Values.args }}
+              args: {{ toJson .Values.args }}
+              {{- end }}
+              {{- if $envVars }}
+              env:
+              {{- range $name, $entry := $envVars }}
+                - name: {{ $entry.name | quote }}
+                  {{- if hasKey $entry "valueFrom" }}
+                  valueFrom: {{ toYaml $entry.valueFrom | nindent 18 }}
+                  {{- else }}
+                  value: {{ $entry.value | quote }}
+                  {{- end }}
+              {{- end }}
+              {{- end }}
+              resources:
+                {{- toYaml .Values.resources | nindent 16 }}
+              {{- if gt (len $volumeMounts) 0 }}
+              volumeMounts:
+                {{- range $volumeMounts }}
+                - name: {{ .name }}
+                  mountPath: {{ .mountPath }}
+                  {{- with .subPath }}
+                  subPath: {{ . }}
+                  {{- end }}
+                  {{- if .readOnly }}
+                  readOnly: {{ .readOnly }}
+                  {{- end }}
+                {{- end }}
+              {{- end }}
+          {{- if gt (len $volumes) 0 }}
+          volumes:
+            {{- toYaml $volumes | nindent 12 }}
+          {{- end }}
