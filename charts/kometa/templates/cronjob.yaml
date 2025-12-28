@@ -13,7 +13,7 @@
 
 {{- $volumes = append $volumes (dict
   "name" "config"
-  "secret" (dict "secretName" (printf "%s-%s" (include "kometa.fullname" $) "config"))
+  "configMap" (dict "name" (printf "%s-%s" (include "kometa.fullname" $) "config"))
 )}}
 
 {{- $volumeMounts = append $volumeMounts (dict

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ include "kometa.fullname" . }}-config
+  name: {{ include "kometa.fullname" . }}
   labels:
     {{- include "kometa.labels" . | nindent 4 }}
 data:
