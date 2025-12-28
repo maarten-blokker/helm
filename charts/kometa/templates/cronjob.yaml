@@ -82,7 +82,7 @@ spec:
               {{- range $name, $entry := $envVars }}
                 - name: {{ $entry.name | quote }}
                   {{- if hasKey $entry "valueFrom" }}
-                  valueFrom: {{ toYaml $entry.valueFrom | nindent 18 }}
+                  valueFrom: {{ toYaml $entry.valueFrom | nindent 20 }}
                   {{- else }}
                   value: {{ $entry.value | quote }}
                   {{- end }}
