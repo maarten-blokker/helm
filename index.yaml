@@ -2,6 +2,22 @@ apiVersion: v1
 entries:
   bazarr:
   - apiVersion: v2
+    appVersion: 1.5.6
+    created: "2026-03-04T18:56:51.203838772Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Bazarr is a companion application to Sonarr and Radarr that manages
+      and downloads subtitles based on your requirements.
+    digest: 38bfa0aa8ac0560af7ce81f1ed546260fec6db697a2b287ef1e7f2d8706a52a2
+    name: bazarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/bazarr-3.0.1/bazarr-3.0.1.tgz
+    version: 3.0.1
+  - apiVersion: v2
     appVersion: 1.5.3
     created: "2025-10-23T20:18:21.420674697Z"
     dependencies:
@@ -1650,6 +1666,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2026-03-04T18:56:51.3474052Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: cb39c8a61d089e9c6ac4791cfdd6263eb2add30aa3d35198815aec217c635c16
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-3.1.1/prowlarr-3.1.1.tgz
+    version: 3.1.1
+  - apiVersion: v2
     appVersion: 2.0.5
     created: "2025-10-23T20:18:21.883905283Z"
     dependencies:
@@ -1922,6 +1954,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 6.0.4
+    created: "2026-03-04T18:56:51.500322932Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: f3912fb9e73a949b2436900c2b365bc65ca01a7f21008d5438bea4eb3082c77b
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-2.5.0/radarr-2.5.0.tgz
+    version: 2.5.0
   - apiVersion: v2
     appVersion: 5.27.5
     created: "2025-10-23T20:21:17.113727078Z"
@@ -2415,6 +2463,23 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.16
+    created: "2026-03-04T18:56:51.654250773Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: f3f1b34c6a357b2f66cbf9b9e50c7399a19cfdb6137c6eaea22788f876c7b655
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-2.1.1/sonarr-2.1.1.tgz
+    version: 2.1.1
   - apiVersion: v2
     appVersion: 4.0.15
     created: "2025-10-23T20:22:16.083631274Z"
@@ -3351,4 +3416,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2025-12-28T21:51:34.966055368Z"
+generated: "2026-03-04T18:56:51.655018077Z"
