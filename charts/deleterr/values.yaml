@@ -1,0 +1,46 @@
+image:
+  repository: ghcr.io/rfsbraz/deleterr
+  tag: 0.2.12
+
+ports: [ ]
+
+config:
+  dry_run: true
+  scheduler:
+    enabled: true
+    schedule: "weekly"
+    timezone: "Europe/Amsterdam"
+
+configFiles:
+  - name: settings
+    file: settings.yaml
+    mount:
+      path: /config
+    content:
+      "{{- toYaml .Values.config }}"
+
+volumes:
+  - name: logs
+    emptyDir: {}
+    mount:
+      mountPath: /config/logs
+
+livenessProbe:
+  enabled: true
+  exec:
+    command:
+      - sh
+      - -c
+      - pgrep -f deleterr
+  initialDelaySeconds: 5
+  periodSeconds: 30
+
+readinessProbe:
+  enabled: true
+  exec:
+    command:
+      - sh
+      - -c
+      - pgrep -f deleterr
+  initialDelaySeconds: 5
+  periodSeconds: 1
