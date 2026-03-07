@@ -4,7 +4,7 @@ image:
 
 ports: [ ]
 
-config:
+config: |
   dry_run: true
   scheduler:
     enabled: true
@@ -16,8 +16,8 @@ configFiles:
     file: settings.yaml
     mount:
       path: /config
-    content:
-      "{{- toYaml .Values.config }}"
+    content: |
+      {{ tpl .Values.config $ | indent 2 }}
 
 volumes:
   - name: logs
