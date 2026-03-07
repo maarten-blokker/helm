@@ -203,6 +203,22 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/cronjob-0.1.0/cronjob-0.1.0.tgz
     version: 0.1.0
+  deleterr:
+  - apiVersion: v2
+    appVersion: 0.2.12
+    created: "2026-03-07T20:40:51.124161569Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.2.0
+    description: Intelligent media library cleanup for Plex
+    digest: aba3d6f48ad08712f14bcc0e5e68d70c25ed3bc7b1a227dd8cc4f037d105de71
+    name: deleterr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/deleterr-1.0.0/deleterr-1.0.0.tgz
+    version: 1.0.0
   deluge:
   - apiVersion: v2
     appVersion: 2.1.1
@@ -3416,4 +3432,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-03-04T18:56:51.655018077Z"
+generated: "2026-03-07T20:40:51.124504979Z"
