@@ -1,6 +1,6 @@
 image:
   repository: danielszabo99/microbin
-  tag: 2.0.4
+  tag: 2.1.4
 
 ports:
   - name: http
