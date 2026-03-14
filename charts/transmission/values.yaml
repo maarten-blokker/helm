@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/transmission
-  tag: 4.0.6
+  tag: 4.1.1
 
 ports:
   - name: http
