@@ -1157,6 +1157,22 @@ entries:
     version: 0.1.0
   microbin:
   - apiVersion: v2
+    appVersion: 2.1.4
+    created: "2026-03-15T08:13:24.589616666Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: MicroBin is a super tiny, feature rich, configurable, self-contained
+      and self-hosted paste bin web application.
+    digest: 1a451c70b9e10291dc779804404fc6d201b3b47a09a41bce8c2b1f5650c0a4d2
+    name: microbin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/microbin-2.1.0/microbin-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
     appVersion: 2.0.4
     created: "2025-05-18T20:52:29.544307128Z"
     dependencies:
@@ -3587,4 +3603,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-03-15T07:44:35.060228535Z"
+generated: "2026-03-15T08:13:24.589927824Z"
