@@ -1049,6 +1049,18 @@ entries:
     version: 1.0.0
   kometa:
   - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2026-03-15T07:44:35.059923944Z"
+    description: Kometa is a powerful tool designed to give you complete control over
+      your media libraries. With Kometa, you can take your customization to the next
+      level, with granular control over metadata, collections, overlays, and much
+      more.
+    digest: 984958eeac953a2630aacd4d829a6db343d5425a69b20c100345bca202c7b679
+    name: kometa
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/kometa-1.1.0/kometa-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 2.2.2
     created: "2025-12-28T21:51:34.965708359Z"
     description: Kometa is a powerful tool designed to give you complete control over
@@ -3575,4 +3587,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-03-15T07:44:20.302955732Z"
+generated: "2026-03-15T07:44:35.060228535Z"
