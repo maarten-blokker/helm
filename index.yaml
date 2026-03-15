@@ -803,6 +803,21 @@ entries:
     version: 1.0.0
   jellyfin:
   - apiVersion: v2
+    appVersion: 10.11.6
+    created: "2026-03-15T11:52:03.495976691Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: The Free Software Media System
+    digest: f9149e54b5b8d412a603bb19bdb979c942027b4f6a41e4ef14ae2ae98c2e106a
+    name: jellyfin
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/jellyfin-2.1.0/jellyfin-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
     appVersion: 10.10.6
     created: "2025-05-24T12:24:07.145205341Z"
     dependencies:
@@ -3603,4 +3618,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-03-15T08:13:24.589927824Z"
+generated: "2026-03-15T11:52:03.496342679Z"
