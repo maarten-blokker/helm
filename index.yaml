@@ -1308,6 +1308,22 @@ entries:
     version: 1.0.0
   overseerr:
   - apiVersion: v2
+    appVersion: 1.35.0
+    created: "2026-03-15T07:39:57.926498622Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Overseerr is a request management and media discovery tool built
+      to work with your existing Plex ecosystem.
+    digest: 144c0ee97505b97dc381c73510af85dfcf7b3cc2c6e3b44e81f46a26f536330a
+    name: overseerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/overseerr-2.2.0/overseerr-2.2.0.tgz
+    version: 2.2.0
+  - apiVersion: v2
     appVersion: 1.34.0
     created: "2025-10-23T20:18:21.641141065Z"
     dependencies:
@@ -3447,4 +3463,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-03-07T21:55:21.351892758Z"
+generated: "2026-03-15T07:39:57.926970434Z"
