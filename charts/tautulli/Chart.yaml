@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 2.16.1
+appVersion: 2.17.0
 description: Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.
 name: tautulli
-version: 2.3.1
+version: 2.4.0
 dependencies:
   - name: common
     version: 1.1.0
