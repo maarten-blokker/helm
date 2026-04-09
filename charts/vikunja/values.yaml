@@ -1,6 +1,6 @@
 image:
   repository: vikunja/vikunja
-  tag: 0.24.6
+  tag: 2.3.0
 
 ports:
   - name: http
