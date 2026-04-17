@@ -1096,6 +1096,18 @@ entries:
     version: 1.0.0
   kometa:
   - apiVersion: v2
+    appVersion: 2.3.1
+    created: "2026-04-17T18:01:04.839310434Z"
+    description: Kometa is a powerful tool designed to give you complete control over
+      your media libraries. With Kometa, you can take your customization to the next
+      level, with granular control over metadata, collections, overlays, and much
+      more.
+    digest: ebd7547b8db401b551e5a5a46b57e7b3ff3be21f01bdeed64c64af32476da410
+    name: kometa
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/kometa-1.1.1/kometa-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     appVersion: 2.3.0
     created: "2026-03-15T07:44:35.059923944Z"
     description: Kometa is a powerful tool designed to give you complete control over
@@ -2141,6 +2153,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 6.1.1
+    created: "2026-04-17T18:01:04.978546712Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: da74e6c937ce53049b202041da249b4c3f8e6282bb04c9569e526750f94745c8
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-2.6.0/radarr-2.6.0.tgz
+    version: 2.6.0
   - apiVersion: v2
     appVersion: 6.0.4
     created: "2026-03-04T18:56:51.500322932Z"
@@ -3733,4 +3761,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-17T18:00:42.25445779Z"
+generated: "2026-04-17T18:01:04.978997699Z"
