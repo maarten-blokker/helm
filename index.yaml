@@ -3023,6 +3023,23 @@ entries:
     version: 0.1.0
   tandoor-recipes:
   - apiVersion: v2
+    appVersion: 2.6.9
+    created: "2026-04-17T18:00:17.224957115Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.0.1
+    description: The recipe manager that allows you to manage your ever growing collection
+      of digital recipes.
+    digest: 635fb907445300d5a1c99e484e8eb293bfd8006dfa7905782f149a43cf5ca751
+    name: tandoor-recipes
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tandoor-recipes-2.4.1/tandoor-recipes-2.4.1.tgz
+    version: 2.4.1
+  - apiVersion: v2
     appVersion: 2.6.1
     created: "2026-03-29T08:50:14.233642335Z"
     dependencies:
@@ -3700,4 +3717,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-17T17:59:56.762255841Z"
+generated: "2026-04-17T18:00:17.225997657Z"
