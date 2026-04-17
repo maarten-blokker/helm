@@ -1169,6 +1169,22 @@ entries:
     version: 1.0.0
   maintainerr:
   - apiVersion: v2
+    appVersion: 3.7.0
+    created: "2026-04-17T18:01:24.39819781Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Maintainerr is a one-stop-shop for handling outlying shows and movies
+      that take up precious space on your server.
+    digest: 14e08b718914a852299a096c47b6954faac6197948b4fc88252bc748be1c0da1
+    name: maintainerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/maintainerr-2.0.0/maintainerr-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
     appVersion: 2.19.0
     created: "2025-09-11T19:32:51.906003848Z"
     dependencies:
@@ -3761,4 +3777,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-17T18:01:04.978997699Z"
+generated: "2026-04-17T18:01:24.398704962Z"
