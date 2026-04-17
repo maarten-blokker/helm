@@ -1837,6 +1837,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 2.3.5
+    created: "2026-04-17T18:00:42.254024932Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 1a21de013fa7a2b58b720289dc7595cb4119b6ab154e47ccfed95b9bbde127a7
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-3.1.2/prowlarr-3.1.2.tgz
+    version: 3.1.2
+  - apiVersion: v2
     appVersion: 2.3.0
     created: "2026-03-04T18:56:51.3474052Z"
     dependencies:
@@ -3717,4 +3733,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-17T18:00:17.225997657Z"
+generated: "2026-04-17T18:00:42.25445779Z"
