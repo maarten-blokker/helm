@@ -2708,6 +2708,23 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/secretstore-0.1.0/secretstore-0.1.0.tgz
     version: 0.1.0
+  seerr:
+  - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2026-04-26T10:40:11.236758919Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.2.0
+    description: Seerr is a free and open source software application for managing
+      requests for your media library.
+    digest: 2712b90946dc04b6651596c2dcda3d259eff04771c42efe5781932412c8fcfc2
+    name: seerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/seerr-1.0.0/seerr-1.0.0.tgz
+    version: 1.0.0
   sonarr:
   - apiVersion: v2
     appVersion: 4.0.17
@@ -3777,4 +3794,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-17T18:01:24.398704962Z"
+generated: "2026-04-26T10:40:11.237592599Z"
