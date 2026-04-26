@@ -1,0 +1,11 @@
+apiVersion: v2
+appVersion: 3.2.0
+description: Seerr is a free and open source software application for managing requests for your media library.
+name: seerr
+version: 1.0.0
+dependencies:
+  - name: common
+    version: 1.2.0
+    repository: https://common-chart.home-net.app
+    import-values:
+      - default
