@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/wikijs
-  tag: 2.5.308
+  tag: 2.5.313
 
 ports:
   - name: http
