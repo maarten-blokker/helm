@@ -1,9 +1,0 @@
-externalSecrets: {}
-#  gcp-store:
-#    storeKind: ClusterSecretStore
-#    target:
-#      name: cluster-secrets
-#    data:
-#      - key: 'kubernetes-password'
-#        remoteRef:
-#          key: 'externally-hosted-password'
