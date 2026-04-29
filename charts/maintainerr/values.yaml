@@ -1,6 +1,6 @@
 image:
   repository: jorenn92/maintainerr
-  tag: 3.7.0
+  tag: 3.9.0
 
 ports:
   - name: http
