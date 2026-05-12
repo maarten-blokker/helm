@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/tautulli
-  tag: 2.17.0
+  tag: 2.17.1
 
 ports:
   - name: http
