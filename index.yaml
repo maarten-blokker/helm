@@ -115,6 +115,22 @@ entries:
     version: 1.0.0
   cleanuparr:
   - apiVersion: v2
+    appVersion: 2.9.12
+    created: "2026-05-12T06:27:43.652204125Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Cleanuparr is a tool for automating the cleanup of unwanted or blocked
+      files in Sonarr, Radarr, and supported download clients like qBittorrent.
+    digest: c18cf2b42fd84e0cbccc1ab349c3ab34e8331a666977aba75cc5efab89cb4053
+    name: cleanuparr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/cleanuparr-1.3.2/cleanuparr-1.3.2.tgz
+    version: 1.3.2
+  - apiVersion: v2
     appVersion: 2.9.8
     created: "2026-04-17T17:59:56.761809133Z"
     dependencies:
@@ -3794,4 +3810,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-04-26T10:40:11.237592599Z"
+generated: "2026-05-12T06:27:43.652619028Z"
