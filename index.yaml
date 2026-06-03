@@ -253,6 +253,21 @@ entries:
     version: 0.1.0
   deleterr:
   - apiVersion: v2
+    appVersion: 0.2.19
+    created: "2026-06-03T09:01:54.906523874Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.2.0
+    description: Intelligent media library cleanup for Plex
+    digest: 915099531dc48bd58200d858617c39c7bb32b984f06e2af8d415d442bcde2f2b
+    name: deleterr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/deleterr-1.1.3/deleterr-1.1.3.tgz
+    version: 1.1.3
+  - apiVersion: v2
     appVersion: 0.2.17
     created: "2026-05-12T06:28:53.7731359Z"
     dependencies:
@@ -3872,4 +3887,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-06-03T09:01:29.595844913Z"
+generated: "2026-06-03T09:01:54.907109925Z"
