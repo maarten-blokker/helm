@@ -2756,6 +2756,22 @@ entries:
     version: 0.1.0
   seerr:
   - apiVersion: v2
+    appVersion: v3.3.0
+    created: "2026-06-03T09:01:29.595493281Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.2.0
+    description: Seerr is a free and open source software application for managing
+      requests for your media library.
+    digest: 73d030c159b485ea4cd30d2c6a7f77823650827728a0d2838130cbe6362d0b4d
+    name: seerr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/seerr-1.1.0/seerr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 3.2.0
     created: "2026-04-26T10:40:11.236758919Z"
     dependencies:
@@ -3856,4 +3872,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-05-12T06:28:53.774900692Z"
+generated: "2026-06-03T09:01:29.595844913Z"
