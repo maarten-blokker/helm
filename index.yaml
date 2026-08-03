@@ -2911,6 +2911,23 @@ entries:
     version: 1.0.0
   sonarr:
   - apiVersion: v2
+    appVersion: 4.0.19
+    created: "2026-08-03T09:20:56.622755041Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Sonarr is a PVR for usenet and bittorrent users.
+    digest: 08a3db8a8eb6e4715ccf2b23d78886777152f6460d4e23e570b044a3a7e13296
+    home: https://github.com/Sonarr/Sonarr
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sonarr-2.1.3/sonarr-2.1.3.tgz
+    version: 2.1.3
+  - apiVersion: v2
     appVersion: 4.0.17
     created: "2026-03-22T20:17:52.766942601Z"
     dependencies:
@@ -3994,4 +4011,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-08-03T09:19:28.576582233Z"
+generated: "2026-08-03T09:20:56.623103207Z"
