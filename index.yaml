@@ -1921,6 +1921,22 @@ entries:
     version: 1.0.0
   profilarr:
   - apiVersion: v2
+    appVersion: v1.1.5
+    created: "2026-08-03T09:24:32.078875039Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Configuration management and auto-import tool for Radarr/Sonarr custom
+      formats and profiles.
+    digest: 8dde197bd51058c0fab0476851988e7b15d6a8ac617dde563b06a2c5d960351c
+    name: profilarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/profilarr-1.1.2/profilarr-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
     appVersion: v1.1.4
     created: "2026-03-15T07:40:46.577855835Z"
     dependencies:
@@ -2656,6 +2672,21 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/radarr-1.0.0/radarr-1.0.0.tgz
     version: 1.0.0
   sabnzbd:
+  - apiVersion: v2
+    appVersion: 5.0.4
+    created: "2026-08-03T09:24:32.259197709Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: The free and easy binary newsreader
+    digest: 7b4d6718607de8386828a2e114988e5081eb816bb7ad8df15c84ff1b8d13323a
+    name: sabnzbd
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/sabnzbd-3.0.2/sabnzbd-3.0.2.tgz
+    version: 3.0.2
   - apiVersion: v2
     appVersion: 5.0.3
     created: "2026-06-03T09:02:18.452739074Z"
@@ -3623,6 +3654,22 @@ entries:
     version: 0.1.0
   tautulli:
   - apiVersion: v2
+    appVersion: 2.17.2
+    created: "2026-08-03T09:24:32.459359678Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Tautulli is a 3rd party application that you can run alongside your
+      Plex Media Server to monitor activity and track various statistics.
+    digest: 9f9589b35999d9bf41b29824f78d9e7095de01153bf4c59148725c796b211d73
+    name: tautulli
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/tautulli-2.4.2/tautulli-2.4.2.tgz
+    version: 2.4.2
+  - apiVersion: v2
     appVersion: 2.17.1
     created: "2026-05-12T06:28:09.513265406Z"
     dependencies:
@@ -4026,4 +4073,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-08-03T09:22:48.617200013Z"
+generated: "2026-08-03T09:24:32.460047165Z"
