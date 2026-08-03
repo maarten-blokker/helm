@@ -1158,6 +1158,18 @@ entries:
     version: 1.0.0
   kometa:
   - apiVersion: v2
+    appVersion: 2.4.6
+    created: "2026-08-03T09:19:01.450821866Z"
+    description: Kometa is a powerful tool designed to give you complete control over
+      your media libraries. With Kometa, you can take your customization to the next
+      level, with granular control over metadata, collections, overlays, and much
+      more.
+    digest: 2cea57a573ff5252c45318a957c9fec9e7fa292940eb43cc58da558112fb3d69
+    name: kometa
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/kometa-1.2.0/kometa-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
     appVersion: 2.3.1
     created: "2026-04-17T18:01:04.839310434Z"
     description: Kometa is a powerful tool designed to give you complete control over
@@ -1927,6 +1939,22 @@ entries:
     version: 1.0.0
   prowlarr:
   - apiVersion: v2
+    appVersion: 2.5.2
+    created: "2026-08-03T09:19:01.680701643Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: c937e8f155f322ef875fd2364ee826bfc58356bdef9fc1565bf081fccfc504a1
+    name: prowlarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/prowlarr-3.2.0/prowlarr-3.2.0.tgz
+    version: 3.2.0
+  - apiVersion: v2
     appVersion: 2.3.5
     created: "2026-04-17T18:00:42.254024932Z"
     dependencies:
@@ -2231,6 +2259,22 @@ entries:
     - https://github.com/maarten-blokker/helm/releases/download/prowlarr-1.0.0/prowlarr-1.0.0.tgz
     version: 1.0.0
   radarr:
+  - apiVersion: v2
+    appVersion: 6.3.0
+    created: "2026-08-03T09:19:01.926645427Z"
+    dependencies:
+    - import-values:
+      - default
+      name: common
+      repository: https://common-chart.home-net.app
+      version: 1.1.0
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 779a0fcfe452df6f72741697e7639ad49160ad6829ed511e7d250a5b19f59382
+    home: https://github.com/Radarr/Radarr
+    name: radarr
+    urls:
+    - https://github.com/maarten-blokker/helm/releases/download/radarr-2.7.0/radarr-2.7.0.tgz
+    version: 2.7.0
   - apiVersion: v2
     appVersion: 6.1.1
     created: "2026-04-17T18:01:04.978546712Z"
@@ -3934,4 +3978,4 @@ entries:
     urls:
     - https://github.com/maarten-blokker/helm/releases/download/wikijs-0.0.1/wikijs-0.0.1.tgz
     version: 0.0.1
-generated: "2026-08-03T09:18:24.641045727Z"
+generated: "2026-08-03T09:19:01.927393075Z"
