@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/cleanuparr/cleanuparr
-  tag: 2.10.3
+  tag: 2.10.5
 
 ports:
   - name: http
