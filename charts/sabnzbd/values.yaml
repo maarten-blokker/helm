@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/sabnzbd
-  tag: 5.0.4
+  tag: 5.1.3
 
 ports:
   - name: http
