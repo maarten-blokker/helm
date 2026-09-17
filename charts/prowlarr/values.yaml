@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/prowlarr
-  tag: 2.5.2
+  tag: 2.6.5
 
 ports:
   - name: http
